@@ -1,0 +1,1 @@
+D:\Study\Skillbox\android-basic\03_HelloKotlin\homework\build\classes\kotlin\main\MainKt.class
