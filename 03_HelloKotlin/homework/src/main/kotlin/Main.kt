@@ -1,8 +1,7 @@
-fun main() {
+ fun main()  {
     print("My name is ")
     println("Aleksandr Latyshev")
 
-    //println("dont have experience at programming")
 
     println("My age")
     println("32")
@@ -19,6 +18,5 @@ fun main() {
     /*fealing like a real hacker right now
     * great
     * thank you */
-
 
 }
