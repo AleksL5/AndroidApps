@@ -1,8 +1,8 @@
 fun main() {
     val encryption = """F2p)v"y233{0->c}ttelciFc"""
-    val resultFirst = descryptionFirst(encryption)
-    val resultSecond = descryptionSecond(encryption)
-    println("$resultFirst \n $resultSecond")
+    val firstResult = descryptionFirst(encryption)
+    val secondResult = descryptionSecond(encryption)
+    println("$firstResult \n $secondResult")
 
 }
 
