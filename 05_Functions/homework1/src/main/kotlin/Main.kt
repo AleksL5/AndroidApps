@@ -1,24 +1,39 @@
-fun main () {
+fun main() {
     val encryption = """F2p)v"y233{0->c}ttelciFc"""
+    println(descryptionFirst(encryption))
+    println(descryptionSecond(encryption))
 
-    decryption(encryption)
 }
-fun decryption (part: String) {
-    val partText = part.length / 2
-    val firstPart = (part.take(partText))
-    val secondPart = (part.takeLast(partText))
 
-    val stepOne = firstPart.map {char -> char + 1}. joinToString("")
-    val stepTwo = stepOne.replace ('5', 's')
-    val stepThree = stepTwo.replace ('4', 'u')
-    val stepFour = stepThree.map {char -> char - 3}. joinToString ("")
-    val stepFive = stepFour.replace ('0', 'o')
+fun descryptionFirst(part: String): String {
+    val splitText = part.length / 2
+    val firstPart = part.take(splitText)
+
+    val firstResult = firstPart.map { char -> char + 1 }.joinToString("")
+        .replace('5', 's')
+        .replace('4', 'u')
+        .map {char -> char - 3}.joinToString("")
+        .replace('0', 'o')
+
+    return firstResult
+}
+
+fun descryptionSecond(part: String): String {
+    val splitText = part.length / 2
+    val secondPart = part.takeLast(splitText)
+
+    val secondResult = secondPart.reversed()
+        .map { char -> char - 4 }.joinToString("")
+        .replace('_', ' ')
+
+    return secondResult
 
 
-    val stepSix = secondPart.reversed()
-    val stepSeven = stepSix.map {char -> char - 4}.joinToString("")
-    val stepEight = stepSeven.replace('_',' ')
 
 
-    println("$stepFive\n$stepEight")
+
+
+
+
+
 }
