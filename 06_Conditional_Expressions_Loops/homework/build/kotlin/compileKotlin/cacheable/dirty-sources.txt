@@ -1,1 +1,0 @@
-D:\Study\Skillbox\android-basic\06_Conditional_Expressions_Loops\homework\src\main\kotlin\Main.kt
