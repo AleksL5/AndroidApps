@@ -1,0 +1,1 @@
+C:\skillbox\android-basic\06_Conditional_Expressions_Loops\homework\build\classes\kotlin\main\MainKt.class
