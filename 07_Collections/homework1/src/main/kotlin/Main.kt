@@ -1,8 +1,9 @@
 package org.example
+
 import java.util.Scanner
 
 fun main() {
-
+creatPhoneBook(3)
 
 }
 
@@ -34,4 +35,5 @@ fun bookToSet(phoneBook: List<String>){
 fun sumOfNumbers(phoneBook: List<String>) = phoneBook.sumOf { it.toLong() }
 fun bookToMap(phoneBook: List<String>){
     var phoneBookToMap = mutableMapOf<String, String>()
+
 }
