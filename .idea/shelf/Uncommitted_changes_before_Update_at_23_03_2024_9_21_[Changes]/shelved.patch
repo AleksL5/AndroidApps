@@ -1,0 +1,736 @@
+Index: .idea/modules/homeworkFinal.test.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules/homeworkFinal.test.iml b/.idea/modules/homeworkFinal.test.iml
+new file mode 100644
+--- /dev/null	(date 1711123743852)
++++ b/.idea/modules/homeworkFinal.test.iml	(date 1711123743852)
+@@ -0,0 +1,62 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module external.linked.project.id="homeworkFinal:test" external.linked.project.path="$MODULE_DIR$/../../07_Collections/homeworkFinal" external.root.project.path="$MODULE_DIR$/../../07_Collections/homeworkFinal" external.system.id="GRADLE" external.system.module.group="org.example" external.system.module.type="sourceSet" external.system.module.version="1.0-SNAPSHOT" type="JAVA_MODULE" version="4">
++  <component name="FacetManager">
++    <facet external-system-id="GRADLE" type="kotlin-language" name="Kotlin">
++      <configuration version="5" platform="JVM 16" allPlatforms="JVM [16]" useProjectSettings="false">
++        <additionalVisibleModuleNames>homeworkFinal:main</additionalVisibleModuleNames>
++        <compilerSettings />
++        <compilerArguments>
++          <flagArguments>
++            <flagArg name="allowNoSourceFiles" arg="true" />
++            <flagArg name="noReflect" arg="true" />
++            <flagArg name="noStdlib" arg="true" />
++          </flagArguments>
++          <stringArguments>
++            <stringArg name="destination" arg="$MODULE_DIR$/../../07_Collections/homeworkFinal/build/classes/kotlin/test" />
++            <stringArg name="jvmTarget" arg="16" />
++            <stringArg name="moduleName" arg="homeworkFinal_test" />
++            <stringArg name="apiVersion" arg="1.9" />
++            <stringArg name="languageVersion" arg="1.9" />
++          </stringArguments>
++          <arrayArguments>
++            <arrayArg name="pluginClasspaths">
++              <args>
++                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-jvm/1.9.22/79c7960eb58c43865829cb2f420cf8806f59f8b1/kotlin-scripting-jvm-1.9.22.jar</arg>
++                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-common/1.9.22/afe984c6e35d6ac356dbdeb79926474ea68ca7d1/kotlin-scripting-common-1.9.22.jar</arg>
++                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.9.22/d6c44cd08d8f3f9bece8101216dbe6553365c6e3/kotlin-stdlib-1.9.22.jar</arg>
++                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar</arg>
++                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.9.22/f8139a46fc677ec9badc49ae954392f4f5e7e7c7/kotlin-script-runtime-1.9.22.jar</arg>
++              </args>
++            </arrayArg>
++            <arrayArg name="pluginOptions" />
++          </arrayArguments>
++        </compilerArguments>
++      </configuration>
++    </facet>
++  </component>
++  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_16">
++    <output-test url="file://$MODULE_DIR$/../../07_Collections/homeworkFinal/build/classes/kotlin/test" />
++    <exclude-output />
++    <content url="file://$MODULE_DIR$/../../07_Collections/homeworkFinal/src/test">
++      <sourceFolder url="file://$MODULE_DIR$/../../07_Collections/homeworkFinal/src/test/kotlin" isTestSource="true" />
++      <sourceFolder url="file://$MODULE_DIR$/../../07_Collections/homeworkFinal/src/test/resources" type="java-test-resource" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++    <orderEntry type="module" module-name="homeworkFinal.main" />
++    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-test:1.9.22" level="project" />
++    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.9.22" level="project" />
++    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-test-junit5:1.9.22" level="project" />
++    <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
++    <orderEntry type="library" name="Gradle: org.junit.jupiter:junit-jupiter-api:5.6.3" level="project" />
++    <orderEntry type="library" name="Gradle: org.junit.platform:junit-platform-commons:1.6.3" level="project" />
++    <orderEntry type="library" name="Gradle: org.apiguardian:apiguardian-api:1.1.0" level="project" />
++    <orderEntry type="library" name="Gradle: org.opentest4j:opentest4j:1.2.0" level="project" />
++    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.junit.jupiter:junit-jupiter-engine:5.6.3" level="project" />
++    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.junit.platform:junit-platform-engine:1.6.3" level="project" />
++  </component>
++  <component name="SonarLintModuleSettings">
++    <option name="uniqueId" value="d54df290-bb77-4870-89f0-18c660152426" />
++  </component>
++  <component name="TestModuleProperties" production-module="homeworkFinal.main" />
++</module>
+\ No newline at end of file
+Index: .idea/modules/homeworkFinal.main.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules/homeworkFinal.main.iml b/.idea/modules/homeworkFinal.main.iml
+new file mode 100644
+--- /dev/null	(date 1711123743847)
++++ b/.idea/modules/homeworkFinal.main.iml	(date 1711123743847)
+@@ -0,0 +1,51 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module external.linked.project.id="homeworkFinal:main" external.linked.project.path="$MODULE_DIR$/../../07_Collections/homeworkFinal" external.root.project.path="$MODULE_DIR$/../../07_Collections/homeworkFinal" external.system.id="GRADLE" external.system.module.group="org.example" external.system.module.type="sourceSet" external.system.module.version="1.0-SNAPSHOT" type="JAVA_MODULE" version="4">
++  <component name="FacetManager">
++    <facet external-system-id="GRADLE" type="kotlin-language" name="Kotlin">
++      <configuration version="5" platform="JVM 16" allPlatforms="JVM [16]" useProjectSettings="false">
++        <compilerSettings />
++        <compilerArguments>
++          <flagArguments>
++            <flagArg name="allowNoSourceFiles" arg="true" />
++            <flagArg name="noReflect" arg="true" />
++            <flagArg name="noStdlib" arg="true" />
++          </flagArguments>
++          <stringArguments>
++            <stringArg name="destination" arg="$MODULE_DIR$/../../07_Collections/homeworkFinal/build/classes/kotlin/main" />
++            <stringArg name="jvmTarget" arg="16" />
++            <stringArg name="moduleName" arg="homeworkFinal" />
++            <stringArg name="apiVersion" arg="1.9" />
++            <stringArg name="languageVersion" arg="1.9" />
++          </stringArguments>
++          <arrayArguments>
++            <arrayArg name="pluginClasspaths">
++              <args>
++                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-jvm/1.9.22/79c7960eb58c43865829cb2f420cf8806f59f8b1/kotlin-scripting-jvm-1.9.22.jar</arg>
++                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-common/1.9.22/afe984c6e35d6ac356dbdeb79926474ea68ca7d1/kotlin-scripting-common-1.9.22.jar</arg>
++                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.9.22/d6c44cd08d8f3f9bece8101216dbe6553365c6e3/kotlin-stdlib-1.9.22.jar</arg>
++                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar</arg>
++                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.9.22/f8139a46fc677ec9badc49ae954392f4f5e7e7c7/kotlin-script-runtime-1.9.22.jar</arg>
++              </args>
++            </arrayArg>
++            <arrayArg name="pluginOptions" />
++          </arrayArguments>
++        </compilerArguments>
++      </configuration>
++    </facet>
++  </component>
++  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_16">
++    <output url="file://$MODULE_DIR$/../../07_Collections/homeworkFinal/build/classes/kotlin/main" />
++    <exclude-output />
++    <content url="file://$MODULE_DIR$/../../07_Collections/homeworkFinal/src/main">
++      <sourceFolder url="file://$MODULE_DIR$/../../07_Collections/homeworkFinal/src/main/kotlin" isTestSource="false" />
++      <sourceFolder url="file://$MODULE_DIR$/../../07_Collections/homeworkFinal/src/main/resources" type="java-resource" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.9.22" level="project" />
++    <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
++  </component>
++  <component name="SonarLintModuleSettings">
++    <option name="uniqueId" value="184fe465-d5b1-4530-8a41-c6d5f7910e61" />
++  </component>
++</module>
+\ No newline at end of file
+Index: .idea/libraries/Gradle__org_apiguardian_apiguardian_api_1_1_0.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/libraries/Gradle__org_apiguardian_apiguardian_api_1_1_0.xml b/.idea/libraries/Gradle__org_apiguardian_apiguardian_api_1_1_0.xml
+new file mode 100644
+--- /dev/null	(date 1711123375983)
++++ b/.idea/libraries/Gradle__org_apiguardian_apiguardian_api_1_1_0.xml	(date 1711123375983)
+@@ -0,0 +1,12 @@
++<component name="libraryTable">
++  <library name="Gradle: org.apiguardian:apiguardian-api:1.1.0" type="java-imported" external-system-id="GRADLE">
++    <properties groupId="org.apiguardian" artifactId="apiguardian-api" version="1.1.0" />
++    <CLASSES>
++      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apiguardian/apiguardian-api/1.1.0/fc9dff4bb36d627bdc553de77e1f17efd790876c/apiguardian-api-1.1.0.jar!/" />
++    </CLASSES>
++    <JAVADOC />
++    <SOURCES>
++      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apiguardian/apiguardian-api/1.1.0/f3c15fe970af864390c8d0634c9f16aca1b064a8/apiguardian-api-1.1.0-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/modules/homework.main.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules/homework.main.iml b/.idea/modules/homework.main.iml
+new file mode 100644
+--- /dev/null	(date 1711123375877)
++++ b/.idea/modules/homework.main.iml	(date 1711123375877)
+@@ -0,0 +1,51 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module external.linked.project.id="homework:main" external.linked.project.path="$MODULE_DIR$/../../07_Collections/homework" external.root.project.path="$MODULE_DIR$/../../07_Collections/homework" external.system.id="GRADLE" external.system.module.group="org.example" external.system.module.type="sourceSet" external.system.module.version="1.0-SNAPSHOT" type="JAVA_MODULE" version="4">
++  <component name="FacetManager">
++    <facet external-system-id="GRADLE" type="kotlin-language" name="Kotlin">
++      <configuration version="5" platform="JVM 16" allPlatforms="JVM [16]" useProjectSettings="false">
++        <compilerSettings />
++        <compilerArguments>
++          <flagArguments>
++            <flagArg name="allowNoSourceFiles" arg="true" />
++            <flagArg name="noReflect" arg="true" />
++            <flagArg name="noStdlib" arg="true" />
++          </flagArguments>
++          <stringArguments>
++            <stringArg name="destination" arg="$MODULE_DIR$/../../07_Collections/homework/build/classes/kotlin/main" />
++            <stringArg name="jvmTarget" arg="16" />
++            <stringArg name="moduleName" arg="homework" />
++            <stringArg name="apiVersion" arg="1.9" />
++            <stringArg name="languageVersion" arg="1.9" />
++          </stringArguments>
++          <arrayArguments>
++            <arrayArg name="pluginClasspaths">
++              <args>
++                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-jvm/1.9.22/79c7960eb58c43865829cb2f420cf8806f59f8b1/kotlin-scripting-jvm-1.9.22.jar</arg>
++                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-common/1.9.22/afe984c6e35d6ac356dbdeb79926474ea68ca7d1/kotlin-scripting-common-1.9.22.jar</arg>
++                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.9.22/d6c44cd08d8f3f9bece8101216dbe6553365c6e3/kotlin-stdlib-1.9.22.jar</arg>
++                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar</arg>
++                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.9.22/f8139a46fc677ec9badc49ae954392f4f5e7e7c7/kotlin-script-runtime-1.9.22.jar</arg>
++              </args>
++            </arrayArg>
++            <arrayArg name="pluginOptions" />
++          </arrayArguments>
++        </compilerArguments>
++      </configuration>
++    </facet>
++  </component>
++  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_16">
++    <output url="file://$MODULE_DIR$/../../07_Collections/homework/build/classes/kotlin/main" />
++    <exclude-output />
++    <content url="file://$MODULE_DIR$/../../07_Collections/homework/src/main">
++      <sourceFolder url="file://$MODULE_DIR$/../../07_Collections/homework/src/main/kotlin" isTestSource="false" />
++      <sourceFolder url="file://$MODULE_DIR$/../../07_Collections/homework/src/main/resources" type="java-resource" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.9.22" level="project" />
++    <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
++  </component>
++  <component name="SonarLintModuleSettings">
++    <option name="uniqueId" value="a6dcc1f7-14bb-4f0f-bca2-6140281d04c4" />
++  </component>
++</module>
+\ No newline at end of file
+Index: .idea/modules/homework.test.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules/homework.test.iml b/.idea/modules/homework.test.iml
+new file mode 100644
+--- /dev/null	(date 1711123375884)
++++ b/.idea/modules/homework.test.iml	(date 1711123375884)
+@@ -0,0 +1,62 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module external.linked.project.id="homework:test" external.linked.project.path="$MODULE_DIR$/../../07_Collections/homework" external.root.project.path="$MODULE_DIR$/../../07_Collections/homework" external.system.id="GRADLE" external.system.module.group="org.example" external.system.module.type="sourceSet" external.system.module.version="1.0-SNAPSHOT" type="JAVA_MODULE" version="4">
++  <component name="FacetManager">
++    <facet external-system-id="GRADLE" type="kotlin-language" name="Kotlin">
++      <configuration version="5" platform="JVM 16" allPlatforms="JVM [16]" useProjectSettings="false">
++        <additionalVisibleModuleNames>homework:main</additionalVisibleModuleNames>
++        <compilerSettings />
++        <compilerArguments>
++          <flagArguments>
++            <flagArg name="allowNoSourceFiles" arg="true" />
++            <flagArg name="noReflect" arg="true" />
++            <flagArg name="noStdlib" arg="true" />
++          </flagArguments>
++          <stringArguments>
++            <stringArg name="destination" arg="$MODULE_DIR$/../../07_Collections/homework/build/classes/kotlin/test" />
++            <stringArg name="jvmTarget" arg="16" />
++            <stringArg name="moduleName" arg="homework_test" />
++            <stringArg name="apiVersion" arg="1.9" />
++            <stringArg name="languageVersion" arg="1.9" />
++          </stringArguments>
++          <arrayArguments>
++            <arrayArg name="pluginClasspaths">
++              <args>
++                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-jvm/1.9.22/79c7960eb58c43865829cb2f420cf8806f59f8b1/kotlin-scripting-jvm-1.9.22.jar</arg>
++                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-common/1.9.22/afe984c6e35d6ac356dbdeb79926474ea68ca7d1/kotlin-scripting-common-1.9.22.jar</arg>
++                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.9.22/d6c44cd08d8f3f9bece8101216dbe6553365c6e3/kotlin-stdlib-1.9.22.jar</arg>
++                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar</arg>
++                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.9.22/f8139a46fc677ec9badc49ae954392f4f5e7e7c7/kotlin-script-runtime-1.9.22.jar</arg>
++              </args>
++            </arrayArg>
++            <arrayArg name="pluginOptions" />
++          </arrayArguments>
++        </compilerArguments>
++      </configuration>
++    </facet>
++  </component>
++  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_16">
++    <output-test url="file://$MODULE_DIR$/../../07_Collections/homework/build/classes/kotlin/test" />
++    <exclude-output />
++    <content url="file://$MODULE_DIR$/../../07_Collections/homework/src/test">
++      <sourceFolder url="file://$MODULE_DIR$/../../07_Collections/homework/src/test/kotlin" isTestSource="true" />
++      <sourceFolder url="file://$MODULE_DIR$/../../07_Collections/homework/src/test/resources" type="java-test-resource" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++    <orderEntry type="module" module-name="homework.main" />
++    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-test:1.9.22" level="project" />
++    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.9.22" level="project" />
++    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-test-junit5:1.9.22" level="project" />
++    <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
++    <orderEntry type="library" name="Gradle: org.junit.jupiter:junit-jupiter-api:5.6.3" level="project" />
++    <orderEntry type="library" name="Gradle: org.junit.platform:junit-platform-commons:1.6.3" level="project" />
++    <orderEntry type="library" name="Gradle: org.apiguardian:apiguardian-api:1.1.0" level="project" />
++    <orderEntry type="library" name="Gradle: org.opentest4j:opentest4j:1.2.0" level="project" />
++    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.junit.jupiter:junit-jupiter-engine:5.6.3" level="project" />
++    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.junit.platform:junit-platform-engine:1.6.3" level="project" />
++  </component>
++  <component name="SonarLintModuleSettings">
++    <option name="uniqueId" value="8458af11-1ef1-4429-bfdd-7f9fff8733bc" />
++  </component>
++  <component name="TestModuleProperties" production-module="homework.main" />
++</module>
+\ No newline at end of file
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/gradle.xml b/.idea/gradle.xml
+new file mode 100644
+--- /dev/null	(date 1711174616372)
++++ b/.idea/gradle.xml	(date 1711174616372)
+@@ -0,0 +1,28 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="GradleMigrationSettings" migrationVersion="1" />
++  <component name="GradleSettings">
++    <option name="linkedExternalProjectsSettings">
++      <GradleProjectSettings>
++        <option name="externalProjectPath" value="$PROJECT_DIR$/07_Collections/homework" />
++        <option name="gradleHome" value="" />
++        <option name="gradleJvm" value="temurin-18" />
++        <option name="modules">
++          <set>
++            <option value="$PROJECT_DIR$/07_Collections/homework" />
++          </set>
++        </option>
++      </GradleProjectSettings>
++      <GradleProjectSettings>
++        <option name="externalProjectPath" value="$PROJECT_DIR$/07_Collections/homeworkFinal" />
++        <option name="gradleHome" value="" />
++        <option name="gradleJvm" value="temurin-18" />
++        <option name="modules">
++          <set>
++            <option value="$PROJECT_DIR$/07_Collections/homeworkFinal" />
++          </set>
++        </option>
++      </GradleProjectSettings>
++    </option>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/libraries/Gradle__org_junit_platform_junit_platform_commons_1_6_3.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/libraries/Gradle__org_junit_platform_junit_platform_commons_1_6_3.xml b/.idea/libraries/Gradle__org_junit_platform_junit_platform_commons_1_6_3.xml
+new file mode 100644
+--- /dev/null	(date 1711123376024)
++++ b/.idea/libraries/Gradle__org_junit_platform_junit_platform_commons_1_6_3.xml	(date 1711123376024)
+@@ -0,0 +1,12 @@
++<component name="libraryTable">
++  <library name="Gradle: org.junit.platform:junit-platform-commons:1.6.3" type="java-imported" external-system-id="GRADLE">
++    <properties groupId="org.junit.platform" artifactId="junit-platform-commons" version="1.6.3" />
++    <CLASSES>
++      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.6.3/7ce526bbb9e6202e8a30140a50bfff644fddd10e/junit-platform-commons-1.6.3.jar!/" />
++    </CLASSES>
++    <JAVADOC />
++    <SOURCES>
++      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.6.3/e276379850676f048f602fedbbe7d4209bf67610/junit-platform-commons-1.6.3-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Gradle__org_junit_platform_junit_platform_engine_1_6_3.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/libraries/Gradle__org_junit_platform_junit_platform_engine_1_6_3.xml b/.idea/libraries/Gradle__org_junit_platform_junit_platform_engine_1_6_3.xml
+new file mode 100644
+--- /dev/null	(date 1711123376030)
++++ b/.idea/libraries/Gradle__org_junit_platform_junit_platform_engine_1_6_3.xml	(date 1711123376030)
+@@ -0,0 +1,12 @@
++<component name="libraryTable">
++  <library name="Gradle: org.junit.platform:junit-platform-engine:1.6.3" type="java-imported" external-system-id="GRADLE">
++    <properties groupId="org.junit.platform" artifactId="junit-platform-engine" version="1.6.3" />
++    <CLASSES>
++      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.6.3/a926b9bbc7fe67c5795ee1f00cc1b618b313e5ce/junit-platform-engine-1.6.3.jar!/" />
++    </CLASSES>
++    <JAVADOC />
++    <SOURCES>
++      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.6.3/9d57c93c2ee2f70175fdc16f15048c4c6228d913/junit-platform-engine-1.6.3-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_api_5_6_3.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_api_5_6_3.xml b/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_api_5_6_3.xml
+new file mode 100644
+--- /dev/null	(date 1711123376013)
++++ b/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_api_5_6_3.xml	(date 1711123376013)
+@@ -0,0 +1,12 @@
++<component name="libraryTable">
++  <library name="Gradle: org.junit.jupiter:junit-jupiter-api:5.6.3" type="java-imported" external-system-id="GRADLE">
++    <properties groupId="org.junit.jupiter" artifactId="junit-jupiter-api" version="5.6.3" />
++    <CLASSES>
++      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.6.3/73ea5e2b7f112616315d3e2325a98e6e93c2813a/junit-jupiter-api-5.6.3.jar!/" />
++    </CLASSES>
++    <JAVADOC />
++    <SOURCES>
++      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.6.3/e59edc94cf4c0dec770e942d6cd1252162f06a8d/junit-jupiter-api-5.6.3-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_engine_5_6_3.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_engine_5_6_3.xml b/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_engine_5_6_3.xml
+new file mode 100644
+--- /dev/null	(date 1711123376018)
++++ b/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_engine_5_6_3.xml	(date 1711123376018)
+@@ -0,0 +1,12 @@
++<component name="libraryTable">
++  <library name="Gradle: org.junit.jupiter:junit-jupiter-engine:5.6.3" type="java-imported" external-system-id="GRADLE">
++    <properties groupId="org.junit.jupiter" artifactId="junit-jupiter-engine" version="5.6.3" />
++    <CLASSES>
++      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.6.3/234f250d1608684c4436d72214e7530f23cb8a03/junit-jupiter-engine-5.6.3.jar!/" />
++    </CLASSES>
++    <JAVADOC />
++    <SOURCES>
++      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.6.3/8b2c052d418655fb897ccae5cd94eb006c81608c/junit-jupiter-engine-5.6.3-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_test_1_9_22.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_test_1_9_22.xml b/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_test_1_9_22.xml
+new file mode 100644
+--- /dev/null	(date 1711123376001)
++++ b/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_test_1_9_22.xml	(date 1711123376001)
+@@ -0,0 +1,12 @@
++<component name="libraryTable">
++  <library name="Gradle: org.jetbrains.kotlin:kotlin-test:1.9.22" type="java-imported" external-system-id="GRADLE">
++    <properties groupId="org.jetbrains.kotlin" artifactId="kotlin-test" version="1.9.22" />
++    <CLASSES>
++      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test/1.9.22/7ca26b94d39b7b166e3bb08046873bfe98a452ad/kotlin-test-1.9.22.jar!/" />
++    </CLASSES>
++    <JAVADOC />
++    <SOURCES>
++      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test/1.9.22/f6f59039a76e8f3e4fe3a180520f84dc1dbf0d98/kotlin-test-1.9.22-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_test_junit5_1_9_22.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_test_junit5_1_9_22.xml b/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_test_junit5_1_9_22.xml
+new file mode 100644
+--- /dev/null	(date 1711123376007)
++++ b/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_test_junit5_1_9_22.xml	(date 1711123376007)
+@@ -0,0 +1,12 @@
++<component name="libraryTable">
++  <library name="Gradle: org.jetbrains.kotlin:kotlin-test-junit5:1.9.22" type="java-imported" external-system-id="GRADLE">
++    <properties groupId="org.jetbrains.kotlin" artifactId="kotlin-test-junit5" version="1.9.22" />
++    <CLASSES>
++      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test-junit5/1.9.22/2c0a9170cdde7bf0f1861033e5fd91384f41e23e/kotlin-test-junit5-1.9.22.jar!/" />
++    </CLASSES>
++    <JAVADOC />
++    <SOURCES>
++      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test-junit5/1.9.22/b86f0737a40854acc07d00cb6eee053c0b707b57/kotlin-test-junit5-1.9.22-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Gradle__org_jetbrains_annotations_13_0.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/libraries/Gradle__org_jetbrains_annotations_13_0.xml b/.idea/libraries/Gradle__org_jetbrains_annotations_13_0.xml
+new file mode 100644
+--- /dev/null	(date 1711123375988)
++++ b/.idea/libraries/Gradle__org_jetbrains_annotations_13_0.xml	(date 1711123375988)
+@@ -0,0 +1,14 @@
++<component name="libraryTable">
++  <library name="Gradle: org.jetbrains:annotations:13.0" type="java-imported" external-system-id="GRADLE">
++    <properties groupId="org.jetbrains" artifactId="annotations" version="13.0" />
++    <CLASSES>
++      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/73368c3b0887f3adc2c2730dd1b95d7c3781aaf3/annotations-13.0-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/5991ca87ef1fb5544943d9abc5a9a37583fabe03/annotations-13.0-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_9_22.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_9_22.xml b/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_9_22.xml
+new file mode 100644
+--- /dev/null	(date 1711123375995)
++++ b/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_9_22.xml	(date 1711123375995)
+@@ -0,0 +1,12 @@
++<component name="libraryTable">
++  <library name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.9.22" type="java-imported" external-system-id="GRADLE">
++    <properties groupId="org.jetbrains.kotlin" artifactId="kotlin-stdlib" version="1.9.22" />
++    <CLASSES>
++      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.9.22/d6c44cd08d8f3f9bece8101216dbe6553365c6e3/kotlin-stdlib-1.9.22.jar!/" />
++    </CLASSES>
++    <JAVADOC />
++    <SOURCES>
++      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.9.22/d1b45176c0aeb15a309a4f4a7cd160d4b3c8b733/kotlin-stdlib-1.9.22-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/jarRepositories.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/jarRepositories.xml b/.idea/jarRepositories.xml
+new file mode 100644
+--- /dev/null	(date 1711123376192)
++++ b/.idea/jarRepositories.xml	(date 1711123376192)
+@@ -0,0 +1,20 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="RemoteRepositoriesConfiguration">
++    <remote-repository>
++      <option name="id" value="central" />
++      <option name="name" value="Maven Central repository" />
++      <option name="url" value="https://repo1.maven.org/maven2" />
++    </remote-repository>
++    <remote-repository>
++      <option name="id" value="jboss.community" />
++      <option name="name" value="JBoss Community repository" />
++      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
++    </remote-repository>
++    <remote-repository>
++      <option name="id" value="MavenRepo" />
++      <option name="name" value="MavenRepo" />
++      <option name="url" value="https://repo.maven.apache.org/maven2/" />
++    </remote-repository>
++  </component>
++</project>
+\ No newline at end of file
+Index: 07_Collections/.idea/07_Collections.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/07_Collections/.idea/07_Collections.iml b/07_Collections/.idea/07_Collections.iml
+new file mode 100644
+--- /dev/null	(date 1711122880662)
++++ b/07_Collections/.idea/07_Collections.iml	(date 1711122880662)
+@@ -0,0 +1,12 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$" />
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++  <component name="SonarLintModuleSettings">
++    <option name="uniqueId" value="2859d308-ce4a-49ec-a4a4-272d4884aca8" />
++  </component>
++</module>
+\ No newline at end of file
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/compiler.xml b/.idea/compiler.xml
+new file mode 100644
+--- /dev/null	(date 1711123743920)
++++ b/.idea/compiler.xml	(date 1711123743920)
+@@ -0,0 +1,13 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="CompilerConfiguration">
++    <bytecodeTargetLevel>
++      <module name="homework" target="16" />
++      <module name="homework.main" target="16" />
++      <module name="homework.test" target="16" />
++      <module name="homeworkFinal" target="16" />
++      <module name="homeworkFinal.main" target="16" />
++      <module name="homeworkFinal.test" target="16" />
++    </bytecodeTargetLevel>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/kotlinc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/kotlinc.xml b/.idea/kotlinc.xml
+new file mode 100644
+--- /dev/null	(date 1711123376186)
++++ b/.idea/kotlinc.xml	(date 1711123376186)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="KotlinJpsPluginSettings">
++    <option name="version" value="1.9.22" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/libraries/Gradle__org_opentest4j_opentest4j_1_2_0.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/libraries/Gradle__org_opentest4j_opentest4j_1_2_0.xml b/.idea/libraries/Gradle__org_opentest4j_opentest4j_1_2_0.xml
+new file mode 100644
+--- /dev/null	(date 1711123376036)
++++ b/.idea/libraries/Gradle__org_opentest4j_opentest4j_1_2_0.xml	(date 1711123376036)
+@@ -0,0 +1,12 @@
++<component name="libraryTable">
++  <library name="Gradle: org.opentest4j:opentest4j:1.2.0" type="java-imported" external-system-id="GRADLE">
++    <properties groupId="org.opentest4j" artifactId="opentest4j" version="1.2.0" />
++    <CLASSES>
++      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.2.0/28c11eb91f9b6d8e200631d46e20a7f407f2a046/opentest4j-1.2.0.jar!/" />
++    </CLASSES>
++    <JAVADOC />
++    <SOURCES>
++      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.2.0/41d55b3c2254de9837b4ec8923cbd371b8a7eab5/opentest4j-1.2.0-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: homeworkFinal.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/homeworkFinal.iml b/homeworkFinal.iml
+new file mode 100644
+--- /dev/null	(date 1711123455964)
++++ b/homeworkFinal.iml	(date 1711123455964)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module external.linked.project.path="$MODULE_DIR$/07_Collections/homeworkFinal" external.root.project.path="$MODULE_DIR$/07_Collections/homeworkFinal" external.system.id="GRADLE" type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$/07_Collections/homeworkFinal" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++  <component name="SonarLintModuleSettings">
++    <option name="uniqueId" value="c0730fb7-188e-4cc3-b4f4-a279d89d438a" />
++  </component>
++</module>
+\ No newline at end of file
+Index: .idea/sonarlint/securityhotspotstore/index.pb
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/sonarlint/securityhotspotstore/index.pb b/.idea/sonarlint/securityhotspotstore/index.pb
+new file mode 100644
+--- /dev/null	(date 1711174603992)
++++ b/.idea/sonarlint/securityhotspotstore/index.pb	(date 1711174603992)
+@@ -0,0 +1,5 @@
++
++X
++(07_Collections/homework/build.gradle.kts,a\e\ae71881b585900dc48961ebb0251e686a7d92025
++_
++/07_Collections/homework/src/main/kotlin/Main.kt,9\4\94a570f76b631d0beb91bb756b98c637e5f46868
+\ No newline at end of file
+Index: .idea/android-basic.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<module type=\"JAVA_MODULE\" version=\"4\">\r\n  <component name=\"NewModuleRootManager\" inherit-compiler-output=\"true\">\r\n    <exclude-output />\r\n    <content url=\"file://$MODULE_DIR$\" />\r\n    <orderEntry type=\"inheritedJdk\" />\r\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\r\n  </component>\r\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/android-basic.iml b/.idea/android-basic.iml
+--- a/.idea/android-basic.iml	(revision 98973e4d9175eb90e6fb7f1d8dedb6946c72a044)
++++ b/.idea/android-basic.iml	(date 1711123033968)
+@@ -6,4 +6,7 @@
+     <orderEntry type="inheritedJdk" />
+     <orderEntry type="sourceFolder" forTests="false" />
+   </component>
++  <component name="SonarLintModuleSettings">
++    <option name="uniqueId" value="73c73e40-51cb-4076-9d3b-ecc7a3fc193a" />
++  </component>
+ </module>
+\ No newline at end of file
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectModuleManager\">\r\n    <modules>\r\n      <module fileurl=\"file://$PROJECT_DIR$/.idea/android-basic.iml\" filepath=\"$PROJECT_DIR$/.idea/android-basic.iml\" />\r\n    </modules>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+--- a/.idea/modules.xml	(revision 98973e4d9175eb90e6fb7f1d8dedb6946c72a044)
++++ b/.idea/modules.xml	(date 1711174866402)
+@@ -3,6 +3,11 @@
+   <component name="ProjectModuleManager">
+     <modules>
+       <module fileurl="file://$PROJECT_DIR$/.idea/android-basic.iml" filepath="$PROJECT_DIR$/.idea/android-basic.iml" />
++      <module fileurl="file://$PROJECT_DIR$/.idea/modules/homework.iml" filepath="$PROJECT_DIR$/.idea/modules/homework.iml" />
++      <module fileurl="file://$PROJECT_DIR$/.idea/modules/homework.main.iml" filepath="$PROJECT_DIR$/.idea/modules/homework.main.iml" />
++      <module fileurl="file://$PROJECT_DIR$/.idea/modules/homework.test.iml" filepath="$PROJECT_DIR$/.idea/modules/homework.test.iml" />
++      <module fileurl="file://$PROJECT_DIR$/.idea/modules/homeworkFinal.main.iml" filepath="$PROJECT_DIR$/.idea/modules/homeworkFinal.main.iml" />
++      <module fileurl="file://$PROJECT_DIR$/.idea/modules/homeworkFinal.test.iml" filepath="$PROJECT_DIR$/.idea/modules/homeworkFinal.test.iml" />
+     </modules>
+   </component>
+ </project>
+\ No newline at end of file
+Index: .idea/sonarlint/issuestore/index.pb
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/sonarlint/issuestore/index.pb b/.idea/sonarlint/issuestore/index.pb
+new file mode 100644
+--- /dev/null	(date 1711174603991)
++++ b/.idea/sonarlint/issuestore/index.pb	(date 1711174603991)
+@@ -0,0 +1,5 @@
++
++X
++(07_Collections/homework/build.gradle.kts,a\e\ae71881b585900dc48961ebb0251e686a7d92025
++_
++/07_Collections/homework/src/main/kotlin/Main.kt,9\4\94a570f76b631d0beb91bb756b98c637e5f46868
+\ No newline at end of file
+diff --git a/.idea/sonarlint/securityhotspotstore/a/e/ae71881b585900dc48961ebb0251e686a7d92025 b/.idea/sonarlint/securityhotspotstore/a/e/ae71881b585900dc48961ebb0251e686a7d92025
+new file mode 100644
+diff --git a/.idea/sonarlint/issuestore/a/e/ae71881b585900dc48961ebb0251e686a7d92025 b/.idea/sonarlint/issuestore/a/e/ae71881b585900dc48961ebb0251e686a7d92025
+new file mode 100644
