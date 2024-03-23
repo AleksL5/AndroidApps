@@ -1,0 +1,35 @@
+
+Q
+!07_Collections/homework/kotlin.kt,5\3\5363b1cff57c6c9b47c1937bca32732abe0d39b5
+X
+(07_Collections/homework/build.gradle.kts,a\e\ae71881b585900dc48961ebb0251e686a7d92025
+_
+/07_Collections/homework/src/main/kotlin/Main.kt,9\4\94a570f76b631d0beb91bb756b98c637e5f46868
+O
+.idea/modules/homework.test.iml,c\5\c528cae5d2b222bd28ce0e3644623c9f8f7cabc2
+w
+G.idea/sonarlint/issuestore/a/e/ae71881b585900dc48961ebb0251e686a7d92025,3\6\3633fa60f604ef5f8a3b11280ee2a2c554e2deea
+J
+.idea/modules/homework.iml,0\1\0199624fb7eb0a4b69331e42aa2ce6c63607d205
+O
+07_Collections/homework/gradlew,5\7\575ead39a56441b261c3748ee3710d0adcbb0150
+Å
+Q.idea/sonarlint/securityhotspotstore/5/3/5363b1cff57c6c9b47c1937bca32732abe0d39b5,5\3\535b6979a5d27e28f416aad495f162351ac0dc2c
+S
+#07_Collections/homework/gradlew.bat,0\a\0a9fa09df08c58fb1ac1e38df65b39a7830aae64
+Å
+Q.idea/sonarlint/securityhotspotstore/9/4/94a570f76b631d0beb91bb756b98c637e5f46868,e\4\e41f49fe9638fd50989efa344bae6ffbee58bf69
+Å
+Q.idea/sonarlint/securityhotspotstore/a/e/ae71881b585900dc48961ebb0251e686a7d92025,d\a\da36eba452f033623e2245f408e99d4a7c1a35cb
+O
+.idea/modules/homework.main.iml,1\9\19c3cecd1e597ced6be76a6e0787a22e1de363a9
+w
+G.idea/sonarlint/issuestore/9/4/94a570f76b631d0beb91bb756b98c637e5f46868,d\c\dc78f23366ac96a42e6ca573e05381ce73bd013c
+<
+homework.iml,6\0\60b22dbda3d47b226dbfd6b47f79ee9dc5bbb978
+p
+@07_Collections/homework/gradle/wrapper/gradle-wrapper.properties,8\a\8a9a7fb590cd921ba96d2657d2cc066e4132382e
+]
+-.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
