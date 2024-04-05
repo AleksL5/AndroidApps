@@ -153,3 +153,5 @@ Q.idea/sonarlint/securityhotspotstore/d/a/da36eba452f033623e2245f408e99d4a7c1a35
 Q.idea/sonarlint/securityhotspotstore/c/5/c528cae5d2b222bd28ce0e3644623c9f8f7cabc2,3\c\3c573921029f23c4594654e046bbc9f4ebe64a49
 Å
 Q.idea/sonarlint/securityhotspotstore/b/c/bc7058c7dc3c862808e6ba65898fdceae14362c5,3\a\3aa0c76c0240fcbf25627fbb6dd4807cf545b702
+`
+007_Collections/homework1/src/main/kotlin/Main.kt,1\3\13be41dbc5d52275a50c04221c3f03988887e7cb
