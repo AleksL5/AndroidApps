@@ -21,9 +21,8 @@ class Bird(energy:Int, weight:Int, maxAge: Int, name: String) : Animal (energy, 
 			println("${this.name} $typeOfMove")
 		}
 	}
-	fun proCreate(): Bird{
+	override fun proCreate(): Bird{
 		val newBird = Bird(Random.nextInt(1,10), Random.nextInt(1,5), this.maxAge, this.name)
-
 		println("${this.name} procreating new ${newBird.name} Age:${newBird.age} Energy: ${newBird.energy} Weight ${newBird.weight} MaxAge: ${newBird.maxAge} ")
 		return newBird
 	}

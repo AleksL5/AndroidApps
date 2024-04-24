@@ -1,3 +1,5 @@
+import kotlin.random.Random
+
 class Dog(energy:Int, weight:Int, maxAge: Int, name: String) : Animal (energy, weight, maxAge, name){
 	override var age: Int = 0
 		set(value) {
@@ -18,5 +20,10 @@ class Dog(energy:Int, weight:Int, maxAge: Int, name: String) : Animal (energy, w
 			tryIncrementAge()
 			println("${this.name} $typeOfMove")
 		}
+	}
+	override fun proCreate(): Dog{
+		val newDog = Dog(Random.nextInt(1,10), Random.nextInt(1,5), this.maxAge, this.name)
+		println("${this.name} procreating new ${newDog.name} Age:${newDog.age} Energy: ${newDog.energy} Weight ${newDog.weight} MaxAge: ${newDog.maxAge} ")
+		return newDog
 	}
 }
