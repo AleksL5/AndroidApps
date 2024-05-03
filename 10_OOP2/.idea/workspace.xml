@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="11b78221-e6f2-4613-a15f-74bf9d3f8620" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../09_OOP1/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../09_OOP1/.idea/gradle.xml" afterDir="false" />
-    </list>
+    <list default="true" id="11b78221-e6f2-4613-a15f-74bf9d3f8620" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,9 +13,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2fliNRB9Rx3NVDq2HuUKdFaXCCx" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -28,7 +26,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/skillbox/android-basic/10_OOP2"
+    "last_opened_file_path": "D:/skillbox/android-basic"
   }
 }]]></component>
   <component name="SharedIndexes">
