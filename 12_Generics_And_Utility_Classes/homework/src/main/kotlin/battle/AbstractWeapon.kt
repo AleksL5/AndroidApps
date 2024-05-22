@@ -2,29 +2,31 @@ package battle
 
 import Stack
 
-abstract class AbstractWeapon {
+abstract class AbstractWeapon() {
 	abstract val maximumAmmo: Int
 	abstract val fireType: FireType
 	private val cartridgeMagazine = Stack<Ammo>()
-	val cartridgeMagazineStatus = cartridgeMagazine.isEmpty()
+	abstract val ammo: Ammo
 
-	fun creatBullet(type: String): Ammo {
-		return when (type) {
-			"Sniper" -> Ammo.SNIPERRIFLEAMMO
-			"Machine gunner" -> Ammo.MACHINEGUNAMMO
-			"Sheriff" -> Ammo.SHOTGUNAMMO
-			"Trooper" -> Ammo.REVOLVERAMMO
-			else -> Ammo.EMPTYAMMO
+
+	private fun createBullet(): Ammo = ammo
+
+	fun reload() {
+		repeat(maximumAmmo) {
+			this.cartridgeMagazine.push(createBullet())
 		}
 	}
 
-	fun reload(warriorType: String){
-		val newMagazine = Stack<Ammo>()
-		newMagazine.push(creatBullet(warriorType))
+	fun takeAmmoForShot(): List<Ammo> {
+		val ammoForShot = mutableListOf<Ammo>()
+		if (!this.cartridgeMagazine.isEmpty() && cartridgeMagazine.getSize() > fireType.queueSize) {
+			repeat(fireType.queueSize) {
+				ammoForShot.add(createBullet())
+				this.cartridgeMagazine.pop()
+			}
+		}
+		return ammoForShot
 	}
-
-	fun takeBullet() = cartridgeMagazine.pop()
-
 
 
 }

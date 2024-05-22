@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd3dba34-1b8d-4299-8f51-0d283909a61b" name="Changes" comment="Hello. Any tips?">
+      <change afterPath="$PROJECT_DIR$/12_Generics_And_Utility_Classes/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12_Generics_And_Utility_Classes/.idea/12_Generics_And_Utility_Classes.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12_Generics_And_Utility_Classes/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12_Generics_And_Utility_Classes/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12_Generics_And_Utility_Classes/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12_Generics_And_Utility_Classes/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_Generics_And_Utility_Classes/homework/src/main/kotlin/battle/Weapons.kt" beforeDir="false" afterPath="$PROJECT_DIR$/12_Generics_And_Utility_Classes/homework/src/main/kotlin/battle/Weapons.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +79,7 @@
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "jdk.selected.JAVA_MODULE": "corretto-16",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/skillbox/android-basic",
+    "last_opened_file_path": "D:/Study",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
