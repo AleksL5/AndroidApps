@@ -3,14 +3,21 @@ package battle
 import kotlin.random.Random
 
 enum class Ammo(private val damage: Int, private val criticalDamageChance: Int, private val criticalDamageRatio: Int) {
-	SNIPERRIFLEAMMO(50, 20, 30),
-	MACHINEGUNAMMO(40, 20, 30),
-	SHOTGUNAMMO(30, 15, 25),
-	REVOLVERAMMO(20, 10, 15),
-	EMPTYAMMO(0,0,0);
+	SNIPERRIFLEAMMO(85, 20, 7),
+	MACHINEGUNAMMO(80, 20, 5),
+	SHOTGUNAMMO(80, 15, 4),
+	REVOLVERAMMO(75, 10, 3),
+	EMPTYAMMO(0, 0, 0);
 
-	fun takingCurrentDamage(): Int { return if (criticalDamageChance.criticalStrikeChance()) damage * criticalDamageRatio else damage	}
-
+	fun takingCurrentDamage(): Int {
+		val damage = if (criticalDamageChance.chance()) {
+			damage * criticalDamageRatio
+		} else {
+			damage
+		}
+		print(" $damage damage taken,")
+		return damage
+	}
 }
 
-fun Int.criticalStrikeChance() = Random.nextInt(100) < this
+fun Int.chance() = Random.nextInt(100) < this

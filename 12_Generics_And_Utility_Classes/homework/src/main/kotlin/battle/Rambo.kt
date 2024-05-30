@@ -3,24 +3,26 @@ package battle
 import kotlin.random.Random
 
 class Rambo : AbstractWarrior() {
-	override val maximumHealth = 170
-	override val evasionChance = 25
-	override val accuracy: Int = 60
+	override val maximumHealth = 105
+	override val evasionChance = 4
+	override val accuracy: Int = 95
 	override val weapon = Weapons
-	override val currentHealth = 170
-	override var isKilled = false
+	override var currentHealth = 105
+	override var isKilled = currentHealth <= 0
 
 	override fun attack(warrior: AbstractWarrior) {
-		val weapon = weapon.createMachineGun
-		if (weapon.takeAmmoForShot().isEmpty()){
-			println("There are no bullets in the weapon. Recharging and missing my turn")
+		val weapon = Weapons.createMachineGun
+		if (weapon.cartridgeMagazine.isEmpty()){
+			println("$this says: My target $warrior. There are no bullets in the weapon. Recharging and missing my turn.")
 			weapon.reload()
 		}else {
 			weapon.takeAmmoForShot()
-			if (Random.nextInt(100) < this.accuracy - warrior.evasionChance){
-				weapon.takeAmmoForShot()
+			print("$this shoot! $warrior")
+			if ((this.accuracy - warrior.evasionChance).chance()){
 				warrior.getDamage(weapon.ammo.takingCurrentDamage())
+				println(" current health ${warrior.currentHealth}")
 			}
+			else println(" dodged")
 		}
 	}
 }

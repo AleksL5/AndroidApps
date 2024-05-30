@@ -6,4 +6,5 @@ interface Warrior {
 
 	fun attack(warrior: AbstractWarrior)
 	fun getDamage(damage: Int){}
+
 }

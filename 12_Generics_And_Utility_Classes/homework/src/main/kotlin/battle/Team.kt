@@ -4,13 +4,15 @@ import kotlin.random.Random
 
 class Team {
 
-	fun getTeam() : MutableList<AbstractWarrior> {
+
+	fun getTeam(name: String, count: Int): MutableList<AbstractWarrior> {
 		val team = mutableListOf<AbstractWarrior>()
-		repeat(10) {
-		team.add(createSoldier())
+		repeat(count) {
+			team.add(createSoldier())
 		}
-		println("$team created:")
+		println("Team $name created:")
 		team.forEach { println(it) }
+		println("******************")
 		return team
 	}
 
@@ -28,4 +30,7 @@ class Team {
 		}
 	}
 
+	override fun toString(): String {
+		return "${this.javaClass.simpleName}"
+	}
 }

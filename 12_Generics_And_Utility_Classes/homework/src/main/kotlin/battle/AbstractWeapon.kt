@@ -1,13 +1,13 @@
 package battle
 
 import Stack
+import kotlin.random.Random
 
 abstract class AbstractWeapon() {
 	abstract val maximumAmmo: Int
 	abstract val fireType: FireType
-	private val cartridgeMagazine = Stack<Ammo>()
+	abstract val cartridgeMagazine: Stack<Ammo>
 	abstract val ammo: Ammo
-
 
 	private fun createBullet(): Ammo = ammo
 
@@ -19,7 +19,7 @@ abstract class AbstractWeapon() {
 
 	fun takeAmmoForShot(): List<Ammo> {
 		val ammoForShot = mutableListOf<Ammo>()
-		if (!this.cartridgeMagazine.isEmpty() && cartridgeMagazine.getSize() > fireType.queueSize) {
+		if (!cartridgeMagazine.isEmpty() && cartridgeMagazine.getSize() > fireType.queueSize) {
 			repeat(fireType.queueSize) {
 				ammoForShot.add(createBullet())
 				this.cartridgeMagazine.pop()
@@ -27,6 +27,4 @@ abstract class AbstractWeapon() {
 		}
 		return ammoForShot
 	}
-
-
 }

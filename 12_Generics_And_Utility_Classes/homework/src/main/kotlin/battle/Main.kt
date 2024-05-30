@@ -1,10 +1,16 @@
-package battle
+package org.example
 
-fun main(){
+import battle.Battle
+import battle.Team
+import kotlin.random.Random
+
+fun main() {
 	val battle = Battle()
-	val team = Team()
-	val team1 = battle.team1
-
-
-
+	battle.battle()
 }
+
+
+
+
+
+

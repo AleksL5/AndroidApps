@@ -1,33 +1,47 @@
 package battle
 
 class Battle {
-	val team1 = Team().getTeam()
-	val team2 = Team().getTeam()
-	val isOver = false
+	private val team1 = Team().getTeam("Red", 5)
+	private val team2 = Team().getTeam("Green", 5)
 
-	fun battleStatus(team: MutableList<AbstractWarrior>){
-		team1.forEach { println(it) }
-	}
+	private var isOver = false
 
-	fun checkAllWarriorsHealth(team: MutableList<AbstractWarrior>):Int {
-		var sumOfHealth = 0
-		for (i in team.indices){
-			sumOfHealth += team[i].currentHealth
+	fun battle() {
+		var roundCount = 1
+
+		while (!isOver) {
+			print("Round $roundCount starts! ")
+			println(
+				"Team Red health: ${checkAllWarriorsHealth(team1)} | Team Green health: ${
+					checkAllWarriorsHealth(
+						team2
+					)
+				}"
+			)
+			remove(team1)
+			remove(team2)
+			if (isOver)
+				break
+			team1[0].attack(team2[0])
+			remove(team1)
+			remove(team2)
+			if (isOver)
+				break
+			team2[0].attack(team1[0])
+			roundCount++
 		}
-		println("$team, total amount of health: $sumOfHealth ")
-		return sumOfHealth
+		val winner = if (checkAllWarriorsHealth(team1) > checkAllWarriorsHealth(team2))
+			"team 1 winner!" else "team 2 winner!"
+		println("Battle ends $winner")
 	}
 
-	fun checkForRemove(team: MutableList<AbstractWarrior>){
-		val candidatesOnRemove = mutableListOf<AbstractWarrior>()
-		for (i in team.indices){
-			if (team[i].currentHealth <= 0)
-				candidatesOnRemove.add(team[i])
-		}
-		team.removeAll(candidatesOnRemove)
-		println("${candidatesOnRemove.size} warriors died in $team")
+	private fun checkAllWarriorsHealth(team: MutableList<AbstractWarrior>): Int {
+		return team.map { it.currentHealth }.sum()
 	}
 
-
-
+	private fun remove(team: MutableList<AbstractWarrior>) {
+		team.removeAll { it.currentHealth <= 0 }
+		if (team.isEmpty())
+			isOver = true
+	}
 }
