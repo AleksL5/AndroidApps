@@ -5,14 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd3dba34-1b8d-4299-8f51-0d283909a61b" name="Changes" comment="Hello. Any tips?">
-      <change afterPath="$PROJECT_DIR$/12_Generics_And_Utility_Classes/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12_Generics_And_Utility_Classes/.idea/12_Generics_And_Utility_Classes.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12_Generics_And_Utility_Classes/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12_Generics_And_Utility_Classes/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12_Generics_And_Utility_Classes/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12_Generics_And_Utility_Classes/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apiguardian_apiguardian_api_1_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_annotations_13_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_9_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_test_1_9_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_test_junit5_1_9_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_api_5_6_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_engine_5_6_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_platform_junit_platform_commons_1_6_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_platform_junit_platform_engine_1_6_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/12_Generics_And_Utility_Classes/homework/src/main/kotlin/battle/Weapons.kt" beforeDir="false" afterPath="$PROJECT_DIR$/12_Generics_And_Utility_Classes/homework/src/main/kotlin/battle/Weapons.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_HelloKotlin/homework/.gradle/7.4.2/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/03_HelloKotlin/homework/.gradle/7.4.2/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_HelloKotlin/homework/.gradle/7.4.2/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/03_HelloKotlin/homework/.gradle/7.4.2/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_HelloKotlin/homework/.gradle/7.4.2/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/03_HelloKotlin/homework/.gradle/7.4.2/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_HelloKotlin/homework/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/03_HelloKotlin/homework/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_HelloKotlin/homework/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/03_HelloKotlin/homework/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04_Variables_types/homework/.gradle/7.4.2/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/04_Variables_types/homework/.gradle/7.4.2/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04_Variables_types/homework/.gradle/7.4.2/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/04_Variables_types/homework/.gradle/7.4.2/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04_Variables_types/homework/.gradle/7.4.2/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/04_Variables_types/homework/.gradle/7.4.2/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05_Functions/homework1/.gradle/7.4.2/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/05_Functions/homework1/.gradle/7.4.2/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05_Functions/homework1/.gradle/7.4.2/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/05_Functions/homework1/.gradle/7.4.2/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05_Functions/homework1/.gradle/7.4.2/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/05_Functions/homework1/.gradle/7.4.2/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05_Functions/homework1/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/05_Functions/homework1/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06_Conditional_Expressions_Loops/homework/.gradle/7.4.2/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/06_Conditional_Expressions_Loops/homework/.gradle/7.4.2/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06_Conditional_Expressions_Loops/homework/.gradle/7.4.2/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/06_Conditional_Expressions_Loops/homework/.gradle/7.4.2/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06_Conditional_Expressions_Loops/homework/.gradle/7.4.2/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/06_Conditional_Expressions_Loops/homework/.gradle/7.4.2/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06_Conditional_Expressions_Loops/homework/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/06_Conditional_Expressions_Loops/homework/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06_Conditional_Expressions_Loops/homework/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/06_Conditional_Expressions_Loops/homework/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_ClassesAndObjects/homeworkk/.gradle/7.4.2/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/08_ClassesAndObjects/homeworkk/.gradle/7.4.2/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_ClassesAndObjects/homeworkk/.gradle/7.4.2/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/08_ClassesAndObjects/homeworkk/.gradle/7.4.2/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_ClassesAndObjects/homeworkk/.gradle/7.4.2/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/08_ClassesAndObjects/homeworkk/.gradle/7.4.2/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_ClassesAndObjects/homeworkk/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/08_ClassesAndObjects/homeworkk/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_Generics_And_Utility_Classes/homework/src/main/kotlin/battle/Battle.kt" beforeDir="false" afterPath="$PROJECT_DIR$/12_Generics_And_Utility_Classes/homework/src/main/kotlin/battle/Battle.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_Generics_And_Utility_Classes/homework/src/main/kotlin/battle/Team.kt" beforeDir="false" afterPath="$PROJECT_DIR$/12_Generics_And_Utility_Classes/homework/src/main/kotlin/battle/Team.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_Generics_And_Utility_Classes/homework/src/main/kotlin/battle/Warrior.kt" beforeDir="false" afterPath="$PROJECT_DIR$/12_Generics_And_Utility_Classes/homework/src/main/kotlin/battle/Warrior.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +62,17 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="homework" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="homework" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -79,7 +116,7 @@
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "jdk.selected.JAVA_MODULE": "corretto-16",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Study",
+    "last_opened_file_path": "D:/skillbox/android-basic",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
@@ -125,8 +162,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-18.0.2-corretto-18.0.2-4caba194b151-5720f15e" />
-        <option value="jdk-18.0.2-temurin-18.0.2.1-4caba194b151-16d94e77" />
+        <option value="jdk-16.0.2-corretto-16.0.2-4caba194b151-cab9e76a" />
       </set>
     </attachedChunks>
   </component>

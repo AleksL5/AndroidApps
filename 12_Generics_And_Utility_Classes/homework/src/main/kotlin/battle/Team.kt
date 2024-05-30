@@ -2,10 +2,13 @@ package battle
 
 import kotlin.random.Random
 
-class Team {
+class Team(val name: String, val count: Int) {
+	var warriors = mutableListOf<AbstractWarrior>()
+	init {
+		warriors = getTeam(count)
+	}
 
-
-	fun getTeam(name: String, count: Int): MutableList<AbstractWarrior> {
+	fun getTeam(count: Int): MutableList<AbstractWarrior> {
 		val team = mutableListOf<AbstractWarrior>()
 		repeat(count) {
 			team.add(createSoldier())

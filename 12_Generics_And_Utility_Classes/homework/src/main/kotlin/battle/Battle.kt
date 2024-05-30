@@ -1,8 +1,8 @@
 package battle
 
 class Battle {
-	private val team1 = Team().getTeam("Red", 5)
-	private val team2 = Team().getTeam("Green", 5)
+	private val team1 = Team("Red", 10).warriors
+	private val team2 = Team("Green", 10).warriors
 
 	private var isOver = false
 
@@ -19,11 +19,9 @@ class Battle {
 				}"
 			)
 			remove(team1)
-			remove(team2)
 			if (isOver)
 				break
 			team1[0].attack(team2[0])
-			remove(team1)
 			remove(team2)
 			if (isOver)
 				break
