@@ -1,6 +1,7 @@
 package battle
 
 import Stack
+import org.example.NoAmmoException
 import kotlin.random.Random
 
 abstract class AbstractWeapon() {
@@ -19,12 +20,14 @@ abstract class AbstractWeapon() {
 
 	fun takeAmmoForShot(): List<Ammo> {
 		val ammoForShot = mutableListOf<Ammo>()
-		if (!cartridgeMagazine.isEmpty() && cartridgeMagazine.getSize() > fireType.queueSize) {
-			repeat(fireType.queueSize) {
+		if (cartridgeMagazine.isEmpty() && cartridgeMagazine.getSize() < fireType.queueSize) {
+			throw NoAmmoException()
+		}
+		repeat(fireType.queueSize) {
 				ammoForShot.add(createBullet())
 				this.cartridgeMagazine.pop()
 			}
-		}
+
 		return ammoForShot
 	}
 }

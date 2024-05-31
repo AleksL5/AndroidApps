@@ -8,6 +8,7 @@ fun main() {
 	val battle = Battle()
 	battle.battle()
 }
+	class NoAmmoException() : Throwable("Not enough ammo")
 
 
 
