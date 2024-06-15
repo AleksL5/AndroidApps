@@ -1,16 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
+    <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd3dba34-1b8d-4299-8f51-0d283909a61b" name="Changes" comment="ready homework">
+      <change afterPath="$PROJECT_DIR$/07_Collections/homework/local.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_Layout/homework/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_Layout/homework/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_Layout/homework/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_Layout/homework/.idea/appInsightsSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_Layout/homework/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_Layout/homework/.idea/deploymentTargetDropDown.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_Layout/homework/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_Layout/homework/.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_Layout/homework/.idea/migrations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_Layout/homework/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_Layout/homework/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_Layout/homework/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_Layout/homework/app/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_Layout/homework/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_Layout/homework/app/src/androidTest/java/com/example/mycustomactivity/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_Layout/homework/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_Layout/homework/app/src/main/java/com/example/mycustomactivity/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_Layout/homework/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_Layout/homework/app/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_Layout/homework/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_Layout/homework/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_Layout/homework/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_Layout/homework/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_Layout/homework/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_Layout/homework/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_Layout/homework/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_Layout/homework/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_Layout/homework/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_Layout/homework/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_Layout/homework/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_Layout/homework/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_Layout/homework/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_Layout/homework/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_Layout/homework/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_Layout/homework/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_Layout/homework/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_Layout/homework/app/src/main/res/xml/backup_rules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_Layout/homework/app/src/main/res/xml/data_extraction_rules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_Layout/homework/app/src/test/java/com/example/mycustomactivity/ExampleUnitTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_Layout/homework/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_Layout/homework/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_Layout/homework/gradle/libs.versions.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_Layout/homework/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_Layout/homework/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_Layout/homework/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_Layout/homework/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_Layout/homework/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/homework.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/homework.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_03_2024_11_26__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_03_2024_11_26__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_03_2024_9_21__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_03_2024_9_21__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_Collections/homework/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/07_Collections/homework/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_Collections/homework/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/07_Collections/homework/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$/07_Collections/homework">
@@ -78,11 +136,15 @@
     "Kotlin.MainKt.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "corretto-16",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/S",
+    "last_opened_file_path": "D:/SkillBoxAndroidStudio/17_Layout",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
