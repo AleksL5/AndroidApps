@@ -1,5 +1,0 @@
-<resources>
-    <string name="app_name">MyCustomActivity</string>
-    <string name="topStringText">Верхняя строчка</string>
-    <string name="bottomStringText">Нижняя строчка</string>
-</resources>
