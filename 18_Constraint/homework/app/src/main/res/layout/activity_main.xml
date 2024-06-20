@@ -41,7 +41,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/playCircleButton"
         app:layout_constraintTop_toTopOf="@+id/playCircleButton"
-        app:srcCompat="@drawable/skip_next" />
+        app:srcCompat="@drawable/skip_next"
+        app:tint="@color/black" />
 
     <ImageButton
         android:id="@+id/playCircleButton"
@@ -53,7 +54,8 @@
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:srcCompat="@drawable/play_circle" />
+        app:srcCompat="@drawable/play_circle"
+        app:tint="@color/black" />
 
     <ImageButton
         android:id="@+id/skipPreviousButton"
@@ -67,7 +69,8 @@
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/playCircleButton"
-        app:srcCompat="@drawable/skip_previous" />
+        app:srcCompat="@drawable/skip_previous"
+        app:tint="@color/black" />
 
     <TextView
         android:id="@+id/textView"
