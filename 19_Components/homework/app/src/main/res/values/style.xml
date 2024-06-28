@@ -12,11 +12,14 @@
         <item name= "errorEnabled">true</item>
         <item name= "helperTextEnabled">true</item>
     </style>
+
     <style name="MainTextAppearance" >
         <item name="android:textSize">@dimen/default_text_size</item>
         <item name="android:textColor">@color/black</item>
     </style>
-    <style name="CheckBoxTextAppearance" parent="MainTextAppearance">
+
+    <style name="Widget.App.CheckBox" parent="Widget.MaterialComponents.CompoundButton.CheckBox">
+        <item name="buttonTint">@color/russian_tree</item>
         <item name="android:textSize">@dimen/default_text_size</item>
     </style>
 </resources>
