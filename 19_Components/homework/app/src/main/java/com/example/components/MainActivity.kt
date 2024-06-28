@@ -29,7 +29,6 @@ class MainActivity : AppCompatActivity() {
         binding.checkbox1.isEnabled = false
         binding.checkbox2.isEnabled = false
         binding.button.isEnabled = false
-        val toast = Toast.makeText(this, "Изменения сохранены", Toast.LENGTH_LONG)
         binding.nameText.doOnTextChanged { text, _, _, _ ->
             nameText(text)
         }
@@ -62,6 +61,7 @@ class MainActivity : AppCompatActivity() {
         binding.scoreValueView.text = binding.progress.progress.toString()
 
         binding.button.setOnClickListener {
+            val toast = Toast.makeText(this, "Изменения сохранены", Toast.LENGTH_LONG)
             toast.show()
         }
 
