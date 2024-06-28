@@ -19,13 +19,12 @@ import androidx.core.view.isGone
 import androidx.core.view.isVisible
 
 
-private lateinit var binding: ActivityMainBinding
-
 class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        val binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.checkbox1.isEnabled = false
         binding.checkbox2.isEnabled = false
@@ -34,16 +33,26 @@ class MainActivity : AppCompatActivity() {
         binding.nameText.doOnTextChanged { text, _, _, _ ->
             if (!text.isNullOrEmpty()) {
                 binding.nameInputLayout.isErrorEnabled = false
+                binding.button.isEnabled = checkStatus()
             } else {
                 binding.nameInputLayout.error = "Введите имя пользователя"
                 binding.nameInputLayout.isErrorEnabled = true
+                binding.button.isEnabled = checkStatus()
             }
         }
+        binding.numberText.doOnTextChanged { text, _, _, _ ->
+            if (!text.isNullOrEmpty()) {
+                binding.button.isEnabled = checkStatus()
+            } else {
+                binding.button.isEnabled = checkStatus()
+            }
+        }
+
         binding.radioButton1.setOnClickListener {
-//            binding.button.isEnabled = checkStatus()
+          binding.button.isEnabled = checkStatus()
         }
         binding.radioButton2.setOnClickListener {
-//            binding.button.isEnabled = checkStatus()
+           binding.button.isEnabled = checkStatus()
         }
         binding.switchMaterial.setOnClickListener {
             if (binding.switchMaterial.isChecked) {
@@ -57,10 +66,10 @@ class MainActivity : AppCompatActivity() {
                 binding.checkbox2.isChecked = false
             }
             binding.checkbox1.setOnClickListener {
-//                binding.button.isEnabled = checkStatus()
+             binding.button.isEnabled = checkStatus()
             }
             binding.checkbox2.setOnClickListener {
-//                binding.button.isEnabled = checkStatus()
+            binding.button.isEnabled = checkStatus()
             }
             binding.progress.progress = Random.nextInt(0, 100)
             binding.scoreValueView.text = binding.progress.progress.toString()
@@ -70,8 +79,8 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
-}
-private fun checkStatus(): Boolean {
-    return ((binding.radioButton1.isChecked || binding.radioButton2.isChecked) && (binding.checkbox1.isChecked || binding.checkbox2.isChecked) &&
-            !binding.nameText.text.isNullOrEmpty() && !binding.numberText.text.isNullOrEmpty())
+    private fun checkStatus(): Boolean {
+        return ((binding.radioButton1.isChecked || binding.radioButton2.isChecked) && (binding.checkbox1.isChecked || binding.checkbox2.isChecked) &&
+                !binding.nameText.text.isNullOrEmpty() && !binding.numberText.text.isNullOrEmpty())
+    }
 }
