@@ -11,6 +11,7 @@ import com.example.components.databinding.ActivityMainBinding
 import com.google.android.material.switchmaterial.SwitchMaterial
 import kotlin.random.Random
 import android.widget.CheckBox
+import android.widget.Toast
 import androidx.core.view.isGone
 import androidx.core.view.isVisible
 
@@ -24,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         binding.checkbox1.isEnabled = false
         binding.checkbox2.isEnabled = false
         binding.button.isEnabled = false
+        val toast = Toast.makeText(this, "Изменения сохранены", Toast.LENGTH_LONG)
         binding.nameText.doOnTextChanged { text, _, _, _ ->
             if (!text.isNullOrEmpty())
                 binding.nameInputLayout.isErrorEnabled = false
@@ -44,12 +46,21 @@ class MainActivity : AppCompatActivity() {
                 binding.checkbox2.isEnabled = false
                 binding.checkbox2.isChecked = false
             }
-            if ((binding.radioButton1.isChecked || binding.radioButton2.isChecked))
-            binding.button.isEnabled = true
-        }
+            binding.checkbox1.setOnClickListener {
+                if ((binding.radioButton1.isChecked || binding.radioButton2.isChecked))
+                    binding.button.isEnabled = true
+            }
+            binding.checkbox2.setOnClickListener {
+                if ((binding.radioButton1.isChecked || binding.radioButton2.isChecked))
+                    binding.button.isEnabled = true
+            }
             binding.progress.progress = Random.nextInt(0, 100)
             binding.scoreValueView.text = binding.progress.progress.toString()
 
+            binding.button.setOnClickListener {
+                toast.show()
+            }
+        }
     }
 }
 // Дополнительные условия которые не получается интегрировать в 47 строку
