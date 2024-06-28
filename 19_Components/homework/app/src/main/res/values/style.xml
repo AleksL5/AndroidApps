@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyCheckBox" >
+    <item name="colorControlNormal">@color/russian_tree</item>
+    <item name="colorControlActivated">@color/russian_tree</item>
+</style>
+    <style name="MyNameInput" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="android:hint">@string/input_name_hint</item>
+        <item name= "counterEnabled">true</item>
+        <item name= "counterMaxLength">40</item>
+        <item name= "endIconMode">clear_text</item>
+        <item name= "errorEnabled">true</item>
+        <item name= "helperTextEnabled">true</item>
+    </style>
+    <style name="MainTextAppearance" >
+        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="CheckBoxTextAppearance" parent="MainTextAppearance">
+        <item name="android:textSize">@dimen/default_text_size</item>
+    </style>
+</resources>

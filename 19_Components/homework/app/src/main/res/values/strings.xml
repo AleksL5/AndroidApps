@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Components</string>
+    <string name="genderText">Пол</string>
+    <string name="loginCheckboxText">Об авторизации на устройстве</string>
+    <string name="infoCheckboxText">О новинках и предложениях</string>
+    <string name="buttonText">Сохранить</string>
+    <string name="switchText">Получать уведомления</string>
+    <string name="scoreText">Баллы</string>
+    <string name="scoreValueText">44/100</string>
+    <string name="info_saved">Изменения сохранены</string>
+    <string name="input_name_hint">Имя</string>
+    <string name="input_humber_hint">Телефон</string>
+    <string name="radio_button_1_text">М</string>
+    <string name="radio_button_2_text">Ж</string>
+    <string name="_40_100">40/100</string>
+</resources>
