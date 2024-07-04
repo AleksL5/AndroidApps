@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LifeCircle</string>
+    <string name="check_box_text">У меня есть отчество</string>
+    <string name="button_text">Продолжить</string>
+    <string name="last_name_hint">Фамилия</string>
+    <string name="first_name_hint">Имя</string>
+    <string name="third_name_hint">Отчество</string>
+    <string name="button2_text">Сохранить</string>
+</resources>
