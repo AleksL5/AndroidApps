@@ -30,8 +30,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.button.setOnClickListener {
-            val isChecked = binding.checkBox.isChecked
-            authLauncher.launch(isChecked)
+            authLauncher.launch(binding.checkBox.isChecked)
         }
     }
 
