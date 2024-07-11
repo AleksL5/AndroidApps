@@ -13,7 +13,9 @@
 
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            app:destination="@id/SecondFragment"
+            app:popUpTo="@id/ThirdFragment"
+            app:popUpToInclusive="true"/>
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -26,7 +28,9 @@
             app:destination="@id/FirstFragment" />
         <action
             android:id="@+id/action_SecondFragment_to_ThirdFragment"
-            app:destination="@id/ThirdFragment" />
+            app:destination="@id/ThirdFragment"
+            app:popUpTo="@id/SecondFragment"
+            app:popUpToInclusive="true"/>
         <action android:id="@+id/arg1"
             app:destination="@+id/ThirdFragment">
         <argument
