@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyFragments</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="next">Next</string>
+    <string name="send_text">Отправить</string>
+    <string name="back_text">Назад</string>
+    <string name="restart_button">Начать заново</string>
+    <string name="title_button_text">Продолжить</string>
+    <string name="date_text">Дата</string>
+</resources>

@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">MyFragments</string>
+    <string name="action_settings">Settings</string>
+    <string name="first_fragment_label" translatable="false">First Fragment</string>
+    <string name="second_fragment_label" translatable="false">Second Fragment</string>
+    <string name="third_fragment_label" translatable="false">Third Fragment</string>
+    <string name="next">Next</string>
+    <string name="send_text">Next</string>
+    <string name="back_text">Previous</string>
+    <string name="restart_button" translatable="false">Try Again</string>
+    <string name="english_version" translatable="false">Russian Version</string>
+    <string name="title_button_text">"Continue</string>
+    <string name="date_text">Date</string>
+</resources>
