@@ -2,18 +2,27 @@ package com.example.myfragments
 
 import android.os.Bundle
 import android.os.Parcelable
+import android.view.Gravity
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.AccelerateInterpolator
 import androidx.core.os.bundleOf
+import androidx.core.view.isInvisible
+import androidx.core.view.isVisible
+import androidx.lifecycle.withCreated
 import androidx.navigation.fragment.FragmentNavigatorExtras
 import androidx.navigation.fragment.findNavController
+import androidx.transition.Explode
+import androidx.transition.Slide
+import androidx.transition.Visibility
 import com.example.myfragments.databinding.FragmentSecondBinding
 import com.example.quiz.quiz.Question
 import com.example.quiz.quiz.QuizStorage
 import com.example.quiz.quiz.QuizStorage.Locale
-    const val ARGS = "ARGS"
+
+const val ARGS = "ARGS"
 
 class SecondFragment : Fragment() {
 
@@ -25,6 +34,9 @@ class SecondFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
+        enterTransition = Explode()
+        exitTransition = Explode()
+
         _binding = FragmentSecondBinding.inflate(inflater, container, false)
         text(Locale.Ru)
         binding.switch1.setOnClickListener {
@@ -39,13 +51,13 @@ class SecondFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        groupsAlpha()
+
         binding.buttonSend.setOnClickListener {
             val bundle = bundleOf(ARGS to readyTest())
             findNavController().navigate(R.id.action_SecondFragment_to_ThirdFragment, bundle)
 
-
         }
-
         binding.buttonBack.setOnClickListener {
             findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
         }
@@ -101,5 +113,25 @@ class SecondFragment : Fragment() {
             else -> " "
         }
         return readyTest
+    }
+
+    private fun groupsAlpha(){
+        binding.firstGroup.animate().apply {
+            duration = 4000
+            alpha(1f)
+            interpolator = AccelerateInterpolator()
+        }.start()
+
+        binding.secondGroup.animate().apply {
+            duration = 4500
+            alpha(1f)
+            interpolator = AccelerateInterpolator()
+        }.start()
+
+        binding.thirdGroup.animate().apply {
+            duration = 5000
+            alpha(1f)
+            interpolator = AccelerateInterpolator()
+        }.start()
     }
 }

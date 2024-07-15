@@ -1,11 +1,15 @@
 package com.example.myfragments
 
+import android.app.ActivityOptions
 import android.os.Bundle
+import android.view.Gravity
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import androidx.transition.Explode
+import androidx.transition.Slide
 import com.example.myfragments.databinding.FragmentFirstBinding
 
 /**
@@ -23,6 +27,8 @@ class FirstFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
+        enterTransition = Explode()
+        exitTransition = Explode()
 
         _binding = FragmentFirstBinding.inflate(inflater, container, false)
         return binding.root
@@ -41,4 +47,5 @@ class FirstFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
+
 }
