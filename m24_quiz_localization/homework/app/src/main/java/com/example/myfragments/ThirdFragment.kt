@@ -24,6 +24,8 @@ class ThirdFragment : Fragment() {
 
     private val binding get() = _binding!!
 
+    val locale = if (java.util.Locale.getDefault().toString() == "ru_RU") Locale.Ru else Locale.En
+
     private val rotationX = PropertyValuesHolder.ofFloat(View.ROTATION_X, 0f, 360f)
     private val textColor = PropertyValuesHolder.ofInt("textColor",
         Color.parseColor("#880E4F"),
@@ -46,13 +48,9 @@ class ThirdFragment : Fragment() {
 
         textAnimation()
 
-        result(Locale.En, "$list")
+        result(locale, "$list")
 
-        binding.switch2.setOnClickListener {
-            if (!binding.switch2.isChecked)
-                result(Locale.En, "$list")
-            else result(Locale.Ru, "$list")
-        }
+
         binding.restartButton.setOnClickListener {
             findNavController().navigate(R.id.action_thirdFragment_to_SecondFragment)
         }

@@ -30,6 +30,8 @@ class SecondFragment : Fragment() {
 
     private val binding get() = _binding!!
 
+    val locale = if (java.util.Locale.getDefault().toString() == "ru_RU") Locale.Ru else Locale.En
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -38,12 +40,9 @@ class SecondFragment : Fragment() {
         exitTransition = Explode()
 
         _binding = FragmentSecondBinding.inflate(inflater, container, false)
-        text(Locale.En)
-        binding.switch1.setOnClickListener {
-            if (!binding.switch1.isChecked)
-                text(Locale.En)
-            else text(Locale.Ru)
-        }
+        text(locale)
+
+
         return binding.root
 
     }

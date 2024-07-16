@@ -43,7 +43,7 @@
             android:id="@+id/thirdQuestion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:layout_marginBottom="20dp"
             android:text="TextView"
             android:textSize="20sp"
@@ -58,7 +58,7 @@
             android:id="@+id/thirdGroup"
             android:layout_width="match_parent"
             android:layout_height="181dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:layout_marginBottom="20dp"
             android:alpha="0"
             app:layout_constraintHorizontal_bias="0.0"
@@ -94,7 +94,7 @@
             android:id="@+id/secondQuestion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:layout_marginBottom="20dp"
             android:textSize="20sp"
             android:text="TextView"
@@ -107,7 +107,7 @@
             android:id="@+id/secondGroup"
             android:layout_width="match_parent"
             android:layout_height="181dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:layout_marginBottom="20dp"
             android:alpha="0"
             app:layout_constraintHorizontal_bias="0.0"
@@ -145,19 +145,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20sp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="50dp"
             android:layout_marginBottom="20dp"
             android:text="TextView"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/switch1" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <RadioGroup
             android:id="@+id/firstGroup"
             android:layout_width="match_parent"
             android:layout_height="181dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:layout_marginBottom="20dp"
             android:alpha="0"
             app:layout_constraintHorizontal_bias="0.0"
@@ -194,16 +194,6 @@
                 android:visibility="visible"/>
         </RadioGroup>
 
-        <com.google.android.material.switchmaterial.SwitchMaterial
-            android:id="@+id/switch1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/english_version"
-            android:layout_marginBottom="15dp"
-            app:layout_constraintBottom_toTopOf="@+id/first_question"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>
