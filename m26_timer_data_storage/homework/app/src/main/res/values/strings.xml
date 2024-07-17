@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SharedPreference</string>
+    <string name="clear_button_text">Очистить</string>
+    <string name="btnSave_text">Сохранить</string>
+</resources>
