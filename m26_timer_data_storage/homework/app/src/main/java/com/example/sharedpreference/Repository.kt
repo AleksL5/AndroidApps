@@ -11,7 +11,7 @@ const val SHARED_PREFS_KEY = "shared_prefs_key"
 
 class Repository(context: Context) {
 
-    protected var localValue: String? = Bundle().getString(BUNDLE_KEY, null)
+    protected var localValue: String? = null
 
     private var prefs = context.getSharedPreferences(PREFERENCE_NAME, MODE_PRIVATE)
     private var editor = prefs.edit()

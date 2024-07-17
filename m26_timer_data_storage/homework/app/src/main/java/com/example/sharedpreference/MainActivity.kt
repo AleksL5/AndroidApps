@@ -26,8 +26,7 @@ class MainActivity : AppCompatActivity() {
         vb.textView.text = repository.getText()
 
         vb.btnSave.setOnClickListener {
-            val text = vb.editText.text.toString()
-            repository.saveText(text)
+            repository.saveText(vb.editText.text.toString())
             vb.textView.text = repository.getText()
 
         }
