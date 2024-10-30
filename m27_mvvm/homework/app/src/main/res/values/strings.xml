@@ -1,6 +1,0 @@
-<resources>
-    <string name="app_name">Mvvm.</string>
-    <string name="hint">Введите информацию</string>
-    <string name="button_text">Поиск</string>
-    <string name="textAnswer">Здесь будет отображаться результат запроса</string>
-</resources>
