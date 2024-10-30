@@ -14,8 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="20dp"
-
-        android:text="@{ viewModel.state.SEARCH_IN_PROCESS ? viewModel.foundText : viewModel.foundText }"
+        android:text="@{ viewModel.state == State.SEARCH_IN_PROCESS ? viewModel.foundText : viewModel.foundText }"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/progressBar"
         app:layout_constraintEnd_toEndOf="parent"
@@ -53,7 +52,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="25dp"
-        android:visibility="@{viewModel.state.SEARCH_IN_PROCESS ? View.VISIBLE : View.INVISIBLE}"
+        android:visibility="@{viewModel.state == State.SEARCH_IN_PROCESS ? View.VISIBLE : View.INVISIBLE}"
         app:layout_constraintBottom_toTopOf="@+id/textSearchFrame"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

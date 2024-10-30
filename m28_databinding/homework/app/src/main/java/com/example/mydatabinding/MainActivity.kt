@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
         DataBindingUtil.setContentView<FragmentMainBinding>(this,R.layout.activity_main)
 
         val binding = FragmentMainBinding.inflate(layoutInflater)
+
         setContentView(binding.root)
 
     }

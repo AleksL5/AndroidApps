@@ -9,6 +9,7 @@ appcompat = "1.7.0"
 kotlinxCoroutinesCore = "1.9.0"
 lifecycleExtensions = "2.2.0"
 lifecycleZ = "2.8.6"
+lifecycleZVersion = "2.8.6."
 material = "1.12.0"
 activity = "1.9.3"
 constraintlayout = "2.1.4"
@@ -21,6 +22,7 @@ fragmentKtx = "1.8.4"
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-lifecycle-extensions = { module = "androidx.lifecycle:lifecycle-extensions", version.ref = "lifecycleExtensions" }
 androidx-lifecycle-z = { module = "androidx.lifecycle:lifecycle-*", version.ref = "lifecycleZ" }
+androidx-lifecycle-z-v286 = { module = "androidx.lifecycle:lifecycle-*", version.ref = "lifecycleZVersion" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
