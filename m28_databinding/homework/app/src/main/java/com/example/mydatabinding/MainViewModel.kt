@@ -4,11 +4,13 @@ import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.cancelChildren
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.debounce
 import kotlinx.coroutines.flow.launchIn
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.onEach
 
 class MainViewModel(
@@ -24,15 +26,17 @@ class MainViewModel(
         requestString.debounce(1000).onEach { value ->
             Log.d("HHHH", "requestingString.onEach $value ")
             find(value)
+
         }.launchIn(viewModelScope)
     }
 
 
-    private fun find(value: String) {
+    private suspend fun find(value: String) {
         Log.d("HHHH", "suspend fun find working")
-            foundText = "Поиск..."
-            _state.value = State.SEARCH_IN_PROCESS
-            foundText = "По запросу \"$value\" ничего не найдено"
-            _state.value = State.SEARCH_ON_FINISH
+        foundText = "Поиск..."
+        _state.value = State.SEARCH_IN_PROCESS
+        delay(2000)
+        foundText = "По запросу \"$value\" ничего не найдено"
+        _state.value = State.SEARCH_ON_FINISH
     }
 }
