@@ -1,5 +1,6 @@
 package com.example.mydatabinding
 
+import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.cancelChildren
@@ -14,31 +15,24 @@ class MainViewModel(
     private val repository: Repository
 ) : ViewModel() {
 
-    private val requestString = MutableSharedFlow<String>(replay = 1)
+    val requestString = MutableStateFlow<String>("")
     var foundText: String = "Здесь будет отображаться результат запроса"
     private val _state = MutableStateFlow(State.SEARCH_ON_PAUSE)
     val state = _state.asStateFlow()
 
+    init {
+        requestString.debounce(1000).onEach { value ->
+            Log.d("HHHH", "requestingString.onEach $value ")
+            find(value)
+        }.launchIn(viewModelScope)
+    }
 
-    var request = ""
-        set(value) {
-            field = value
-            viewModelScope.coroutineContext.cancelChildren()
-            requestString.tryEmit(request)
-            if (request.length > 2) find()
-            else {
-                _state.value = State.SEARCH_ON_PAUSE
-                foundText = "Слишком короткий запрос"
 
-            }
-        }
-
-    private fun find() {
-        requestString.debounce(300).onEach {
+    private fun find(value: String) {
+        Log.d("HHHH", "suspend fun find working")
             foundText = "Поиск..."
             _state.value = State.SEARCH_IN_PROCESS
-            foundText = repository.getData() ?: "По запросу \"$it\" ничего не найдено"
+            foundText = "По запросу \"$value\" ничего не найдено"
             _state.value = State.SEARCH_ON_FINISH
-        }.launchIn(viewModelScope)
     }
 }

@@ -6,16 +6,20 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.databinding.DataBindingUtil
-import com.example.mydatabinding.databinding.FragmentMainBinding
+import androidx.fragment.app.commit
+import androidx.fragment.app.replace
+import com.example.mydatabinding.databinding.ActivityMainBinding
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        DataBindingUtil.setContentView<FragmentMainBinding>(this,R.layout.activity_main)
 
-        val binding = FragmentMainBinding.inflate(layoutInflater)
-
+        val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportFragmentManager.commit {
+            replace<MainFragment>(R.id.fragment_container)
+        }
 
     }
 }
