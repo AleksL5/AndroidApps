@@ -1,42 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp">
 
     <EditText
-        android:id="@+id/wordInput"
+        android:id="@+id/inputWord"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Введите слово" />
+        android:hint="Введите слово"/>
 
     <Button
-        android:id="@+id/addWordButton"
+        android:id="@+id/btnAddWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Добавить"/>
+
+    <TextView
+        android:id="@+id/tvTopWords"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Добавить" />
+        android:text="Топ 5 слов:"/>
 
     <Button
-        android:id="@+id/clearWordsButton"
-        android:layout_width="match_parent"
+        android:id="@+id/btnClearWords"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Очистить" />
+        android:text="Очистить"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Топ 5 слов:" />
-
-    <TextView
-        android:id="@+id/topWordsText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:id="@+id/errorMessage"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@android:color/holo_red_dark"
-        android:visibility="gone" />
 </LinearLayout>
