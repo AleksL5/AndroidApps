@@ -6,6 +6,10 @@ import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import kotlinx.coroutines.flow.Flow
 
+
+//1. Как работают методы?  2. Взаимодействие с ViewModel через переменную в параметрах класса
+
+
 @Dao
 interface WordDao {
     @Insert(onConflict = OnConflictStrategy.IGNORE)

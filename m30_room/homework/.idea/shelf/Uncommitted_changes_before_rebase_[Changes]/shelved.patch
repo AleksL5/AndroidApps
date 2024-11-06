@@ -1,0 +1,77 @@
+Index: app/src/main/java/com/example/room/WordDataBase.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.room\r\n\r\nimport android.content.Context\r\nimport androidx.room.Database\r\nimport androidx.room.Room\r\nimport androidx.room.RoomDatabase\r\n\r\n@Database(entities = [WordEntity::class], version = 1)\r\nabstract class WordDatabase : RoomDatabase() {\r\n    abstract fun wordDao(): WordDao\r\n\r\n    companion object {\r\n        @Volatile\r\n        private var INSTANCE: WordDatabase? = null\r\n\r\n        fun getDatabase(context: Context): WordDatabase {\r\n            return INSTANCE ?: synchronized(this) {\r\n                val instance = Room.databaseBuilder(\r\n                    context.applicationContext,\r\n                    WordDatabase::class.java,\r\n                    \"word_database\"\r\n                ).build()\r\n                INSTANCE = instance\r\n                instance\r\n            }\r\n        }\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/room/WordDataBase.kt b/app/src/main/java/com/example/room/WordDataBase.kt
+--- a/app/src/main/java/com/example/room/WordDataBase.kt	(revision 9e1e78d5cb40a4caf90ccd5b6f6325d0519bbef3)
++++ b/app/src/main/java/com/example/room/WordDataBase.kt	(date 1730836572464)
+@@ -5,6 +5,8 @@
+ import androidx.room.Room
+ import androidx.room.RoomDatabase
+ 
++// 1. Как здесь применяется Singleton реализация?
++
+ @Database(entities = [WordEntity::class], version = 1)
+ abstract class WordDatabase : RoomDatabase() {
+     abstract fun wordDao(): WordDao
+Index: app/src/main/java/com/example/room/WordDao.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.room\r\n\r\nimport androidx.room.Dao\r\nimport androidx.room.Insert\r\nimport androidx.room.OnConflictStrategy\r\nimport androidx.room.Query\r\nimport kotlinx.coroutines.flow.Flow\r\n\r\n@Dao\r\ninterface WordDao {\r\n    @Insert(onConflict = OnConflictStrategy.IGNORE)\r\n    suspend fun insert(word: WordEntity): Long\r\n\r\n    @Query(\"UPDATE words SET count = count + 1 WHERE word = :word\")\r\n    suspend fun incrementCount(word: String)\r\n\r\n    @Query(\"SELECT * FROM words ORDER BY count DESC LIMIT 5\")\r\n    fun getTopWords(): Flow<List<WordEntity>>\r\n\r\n    @Query(\"DELETE FROM words\")\r\n    suspend fun clearAllWords()\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/room/WordDao.kt b/app/src/main/java/com/example/room/WordDao.kt
+--- a/app/src/main/java/com/example/room/WordDao.kt	(revision 9e1e78d5cb40a4caf90ccd5b6f6325d0519bbef3)
++++ b/app/src/main/java/com/example/room/WordDao.kt	(date 1730835905070)
+@@ -6,6 +6,10 @@
+ import androidx.room.Query
+ import kotlinx.coroutines.flow.Flow
+ 
++
++//1. Как работают методы?  2. Взаимодействие с ViewModel через переменную в параметрах класса
++
++
+ @Dao
+ interface WordDao {
+     @Insert(onConflict = OnConflictStrategy.IGNORE)
+Index: app/src/main/java/com/example/room/WordEntity.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.room\r\n\r\nimport androidx.room.Entity\r\nimport androidx.room.PrimaryKey\r\n\r\n@Entity(tableName = \"words\")\r\ndata class WordEntity(\r\n    @PrimaryKey val word: String,\r\n    val count: Int = 1\r\n)
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/room/WordEntity.kt b/app/src/main/java/com/example/room/WordEntity.kt
+--- a/app/src/main/java/com/example/room/WordEntity.kt	(revision 9e1e78d5cb40a4caf90ccd5b6f6325d0519bbef3)
++++ b/app/src/main/java/com/example/room/WordEntity.kt	(date 1730810673402)
+@@ -5,6 +5,7 @@
+ 
+ @Entity(tableName = "words")
+ data class WordEntity(
+-    @PrimaryKey val word: String,
++    @PrimaryKey
++    val word: String,
+     val count: Int = 1
+ )
+\ No newline at end of file
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"GradleSettings\">\r\n    <option name=\"linkedExternalProjectsSettings\">\r\n      <GradleProjectSettings>\r\n        <option name=\"testRunner\" value=\"CHOOSE_PER_TEST\" />\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n        <option name=\"gradleJvm\" value=\"#GRADLE_LOCAL_JAVA_HOME\" />\r\n        <option name=\"modules\">\r\n          <set>\r\n            <option value=\"$PROJECT_DIR$\" />\r\n            <option value=\"$PROJECT_DIR$/app\" />\r\n          </set>\r\n        </option>\r\n        <option name=\"resolveExternalAnnotations\" value=\"false\" />\r\n      </GradleProjectSettings>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/gradle.xml b/.idea/gradle.xml
+--- a/.idea/gradle.xml	(revision 9e1e78d5cb40a4caf90ccd5b6f6325d0519bbef3)
++++ b/.idea/gradle.xml	(date 1730834901894)
+@@ -1,5 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
++  <component name="GradleMigrationSettings" migrationVersion="1" />
+   <component name="GradleSettings">
+     <option name="linkedExternalProjectsSettings">
+       <GradleProjectSettings>
