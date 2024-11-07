@@ -28,9 +28,6 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
-//        viewModel.activityState.observe(this) { activity ->
-//            binding.textView.text = activity?.activity ?: "No Activity Found"
-//        }
 
         binding.button.setOnClickListener {
             viewModel.reloadUsefulActivity()
