@@ -16,14 +16,14 @@ object NetworkModule {
     @Singleton
     fun provideRetrofit(): Retrofit {
         return Retrofit.Builder()
-            .baseUrl("https://www.boredapi.com/")
+            .baseUrl("https://official-joke-api.appspot.com/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
 
     @Provides
     @Singleton
-    fun provideUsefulActivitiesApi(retrofit: Retrofit): UsefulActivitiesApi {
-        return retrofit.create(UsefulActivitiesApi::class.java)
+    fun provideJokeApi(retrofit: Retrofit): JokeApi {
+        return retrofit.create(JokeApi::class.java)
     }
 }

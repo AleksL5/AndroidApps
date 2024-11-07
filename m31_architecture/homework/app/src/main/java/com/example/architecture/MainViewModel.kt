@@ -1,5 +1,6 @@
 package com.example.architecture
 
+import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -10,34 +11,21 @@ import javax.inject.Inject
 
 @HiltViewModel
 class MainViewModel @Inject constructor(
-    private val getUsefulActivityUseCase: GetUsefulActivityUseCase
+    private val jokeRepository: JokeRepository
 ) : ViewModel() {
 
-    private val _activityState = MutableStateFlow<UsefulActivity?>(null)
-    val activityState: StateFlow<UsefulActivity?> = _activityState
+    private val _jokeState = MutableStateFlow<Joke?>(null)
+    val jokeState: StateFlow<Joke?> = _jokeState
 
-    fun reloadUsefulActivity() {
+
+    fun reloadJoke() {
         viewModelScope.launch {
-            val activity = getUsefulActivityUseCase.execute()
-            _activityState.value = activity
+            try {
+                val joke = jokeRepository.getRandomJoke()
+                _jokeState.value = joke
+            } catch (e: Exception) {
+                Log.e("MainViewModel", "Failed to load joke", e)
+            }
         }
     }
 }
-
-
-
-
-//@HiltViewModel
-//class MainViewModel @Inject constructor(
-//    private val getUsefulActivityUseCase: GetUsefulActivityUseCase
-//) : ViewModel() {
-//
-//    private val _activityState = MutableStateFlow<UsefulActivity?>(null)
-//    val activityState: StateFlow<UsefulActivity?> get() = _activityState
-//
-//    fun reloadUsefulActivity() {
-//        viewModelScope.launch {
-//            _activityState.value = getUsefulActivityUseCase.execute()
-//        }
-//    }
-//}
