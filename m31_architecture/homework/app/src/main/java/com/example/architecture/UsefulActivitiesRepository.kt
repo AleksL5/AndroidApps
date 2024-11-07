@@ -1,9 +1,11 @@
 package com.example.architecture
 
-import kotlinx.coroutines.flow.Flow
+import javax.inject.Inject
 
-interface UsefulActivitiesRepository {
-    suspend fun getUsefulActivity(): UsefulActivityDto
-    suspend fun saveUsefulActivity(activity: UsefulActivityDto)
-    suspend fun getAllSavedActivities(): List<UsefulActivityDto>
+class UsefulActivitiesRepository @Inject constructor(
+    private val api: UsefulActivitiesApi
+) {
+    suspend fun getUsefulActivity(): UsefulActivityDto {
+        return api.getActivity()
+    }
 }

@@ -2,7 +2,7 @@ package com.example.architecture
 
 import retrofit2.http.GET
 
-interface BoredApiService {
-    @GET("activity")
+interface UsefulActivitiesApi {
+    @GET("api/activity")
     suspend fun getActivity(): UsefulActivityDto
 }
