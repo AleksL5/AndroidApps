@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Nasa</string>
+    <string name="mars_photo">Photo from Mars</string>
+    <string name="full_mars_photo">Full-screen Mars Photo</string>
+    <string name="earth_date_label">Earth Date: </string>
+    <string name="mars_photo_description">Фото, сделанное на Марсе</string>
+    <string name="fullscreen_image_description">Полноэкранное изображение</string>
+    <string name="close_button_description">Закрыть</string>
+</resources>
