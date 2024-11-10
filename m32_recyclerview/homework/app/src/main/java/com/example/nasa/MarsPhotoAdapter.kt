@@ -29,6 +29,13 @@ class MarsPhotoAdapter : PagingDataAdapter<MarsPhoto, MarsPhotoAdapter.MarsPhoto
                 .load(photo.img_src)
                 .into(binding.imageView)
             binding.dateTextView.text = photo.earth_date
+
+
+            binding.imageView.setOnClickListener {
+                val context = binding.imageView.context
+                val intent = FullScreenPhotoActivity.newIntent(context, photo.img_src)
+                context.startActivity(intent)
+            }
         }
     }
 

@@ -63,4 +63,8 @@ dependencies {
 
     implementation (libs.androidx.lifecycle.viewmodel.ktx)
     implementation (libs.androidx.lifecycle.runtime.ktx)
+
+    implementation (libs.glide.v4151)
+    kapt (libs.compiler.v4151)
+    annotationProcessor ("com.github.bumptech.glide:compiler:4.11.0")
 }
