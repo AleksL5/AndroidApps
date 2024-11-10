@@ -15,7 +15,7 @@ class MarsPhotoRepository(
     fun getMarsPhotos(sol: Int): Flow<PagingData<MarsPhoto>> {
         return Pager(
             config = PagingConfig(pageSize = 25, enablePlaceholders = false),
-            pagingSourceFactory = { MarsPhotoPagingSource(apiService, apiKey, sol) } // Передаем sol в PagingSource
+            pagingSourceFactory = { MarsPhotoPagingSource(apiService, apiKey, sol) }
         ).flow
     }
 }
