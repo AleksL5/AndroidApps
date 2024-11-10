@@ -7,4 +7,6 @@
     <string name="fullscreen_image_description">Полноэкранное изображение</string>
     <string name="close_button_description">Закрыть</string>
     <string name="mars_photo_image_desc">Photo taken by the Curiosity Rover on Mars</string>
+    <string name="full_image">fullImage\n</string>
+    <string name="mars_image">marsImage\n</string>
 </resources>
