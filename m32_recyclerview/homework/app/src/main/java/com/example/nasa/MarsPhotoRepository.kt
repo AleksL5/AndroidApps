@@ -12,10 +12,10 @@ class MarsPhotoRepository(
     private val apiService: MarsApiService,
     private val apiKey: String
 ) {
-    fun getMarsPhotos(): Flow<PagingData<MarsPhoto>> {
+    fun getMarsPhotos(sol: Int): Flow<PagingData<MarsPhoto>> {
         return Pager(
             config = PagingConfig(pageSize = 25, enablePlaceholders = false),
-            pagingSourceFactory = { MarsPhotoPagingSource(apiService, apiKey) }
+            pagingSourceFactory = { MarsPhotoPagingSource(apiService, apiKey, sol) } // Передаем sol в PagingSource
         ).flow
     }
 }

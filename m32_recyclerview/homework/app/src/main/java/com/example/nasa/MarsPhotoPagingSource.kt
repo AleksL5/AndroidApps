@@ -8,13 +8,14 @@ import retrofit2.HttpException
 
 class MarsPhotoPagingSource(
     private val apiService: MarsApiService,
-    private val apiKey: String
+    private val apiKey: String,
+    private val sol: Int = 1000 // Здесь задается количество марсианских дней
 ) : PagingSource<Int, MarsPhoto>() {
 
     override suspend fun load(params: LoadParams<Int>): LoadResult<Int, MarsPhoto> {
         val page = params.key ?: 1
         return try {
-            val response = apiService.getPhotos(apiKey, page)
+            val response = apiService.getPhotos(sol, page, apiKey) // Передаем sol и page в запрос
             LoadResult.Page(
                 data = response.photos,
                 prevKey = if (page == 1) null else page - 1,

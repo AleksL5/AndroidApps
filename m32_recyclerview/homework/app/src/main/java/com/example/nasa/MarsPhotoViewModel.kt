@@ -9,6 +9,6 @@ import androidx.paging.cachedIn
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.launch
 
-class MarsPhotoViewModel(repository: MarsPhotoRepository) : ViewModel() {
-    val photos: Flow<PagingData<MarsPhoto>> = repository.getMarsPhotos().cachedIn(viewModelScope)
+class MarsPhotoViewModel(repository: MarsPhotoRepository, sol: Int) : ViewModel() {
+    val photos: Flow<PagingData<MarsPhoto>> = repository.getMarsPhotos(sol).cachedIn(viewModelScope)
 }

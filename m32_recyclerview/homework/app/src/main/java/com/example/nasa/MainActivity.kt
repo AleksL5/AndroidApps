@@ -13,7 +13,10 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private val viewModel: MarsPhotoViewModel by viewModels {
-        MarsPhotoViewModelFactory(MarsPhotoRepository(MarsApi.retrofitService, "QbOiHsc2avEbE8wtCGuAE4rfmeOSJ95w7zEhuGWq"))
+        MarsPhotoViewModelFactory(
+            MarsPhotoRepository(MarsApi.retrofitService, "QbOiHsc2avEbE8wtCGuAE4rfmeOSJ95w7zEhuGWq"),
+            sol = 1000 // Передаем sol, можно сделать его переменной или получить от пользователя
+        )
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {

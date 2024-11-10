@@ -11,13 +11,15 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:scaleType="centerCrop"
-        android:contentDescription="@string/mars_photo" />
+        android:contentDescription="@string/mars_photo_image_desc" />
 
     <TextView
         android:id="@+id/dateTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="@android:color/black" />
+        android:textAppearance="?attr/textAppearanceSubtitle2"
+        android:textColor="@android:color/black"
+        android:text="Mars Photo Date" />
+
 </LinearLayout>
