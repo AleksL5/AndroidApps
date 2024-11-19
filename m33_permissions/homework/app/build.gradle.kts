@@ -2,6 +2,8 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.ksp)
+    id("com.google.gms.google-services")
+    id("com.google.firebase.crashlytics")
 }
 
 android {
@@ -47,6 +49,12 @@ android {
         implementation(libs.material)
         implementation(libs.androidx.activity)
         implementation(libs.androidx.constraintlayout)
+
+        implementation(platform("com.google.firebase:firebase-bom:33.6.0"))
+        implementation("com.google.firebase:firebase-analytics")
+        implementation("com.google.firebase:firebase-crashlytics")
+        implementation("com.google.firebase:firebase-messaging")
+
 
         implementation ("androidx.room:room-runtime:2.5.0")
         ksp ("androidx.room:room-compiler:2.5.0")

@@ -2,10 +2,13 @@ package com.example.mypermissionsapp
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.ViewGroup
+import android.widget.Button
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.mypermissionsapp.databinding.ActivityPhotoListBinding
+import com.google.firebase.crashlytics.FirebaseCrashlytics
 
 class PhotoListActivity : AppCompatActivity() {
 
@@ -28,5 +31,20 @@ class PhotoListActivity : AppCompatActivity() {
         binding.buttonAddPhoto.setOnClickListener {
             startActivity(Intent(this, AddPhotoActivity::class.java))
         }
+        val crashButton = Button(this)
+        crashButton.text = "Test Crash"
+        crashButton.setOnClickListener {
+            FirebaseCrashlytics.getInstance().log("Crashlytics Test Log")
+
+            try {
+                throw RuntimeException("Test Crash") // Force a crash
+            } catch (e: RuntimeException) {
+                FirebaseCrashlytics.getInstance().recordException(e)
+            }
+        }
+
+        addContentView(crashButton, ViewGroup.LayoutParams(
+            ViewGroup.LayoutParams.MATCH_PARENT,
+            ViewGroup.LayoutParams.WRAP_CONTENT))
     }
 }
